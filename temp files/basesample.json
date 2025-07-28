@@ -1,0 +1,3900 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-11 15:05:48.139652",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "samples_tap",
+  "customer",
+  "template",
+  "purpose_of_evaluation",
+  "customerid",
+  "commissioningnumber",
+  "dateofcommissioning",
+  "owner2",
+  "deliverydate",
+  "ownermobile",
+  "quotation",
+  "region",
+  "city",
+  "gada",
+  "willtoevalution",
+  "willtoevalutionmoblie",
+  "instrementnumber",
+  "instrementdate",
+  "instrementlocation",
+  "plannednumber",
+  "blocknumber",
+  "piecenumber",
+  "earth",
+  "piecenumber2",
+  "buildingpermitnumber",
+  "buildingpermitdate",
+  "buildingpermitnote",
+  "buildingpermitlocation",
+  "licebcetype",
+  "plannername",
+  "aqarcode",
+  "unitnumber",
+  "otherusers",
+  "zradecision",
+  "zradecisiondate",
+  "contractorname",
+  "northern_border",
+  "southern_border",
+  "eastern_border",
+  "western_border",
+  "northern_length",
+  "southern_length",
+  "eastern_length",
+  "western_length",
+  "sequancnumber",
+  "codenumber",
+  "noteforentring",
+  "categoty",
+  "aqartype",
+  "floors",
+  "aqarclassfication",
+  "unitcount",
+  "appartmentname",
+  "floorname",
+  "govtype",
+  "govname",
+  "isaqaridenticalwithbuildinglicense",
+  "buildingstate",
+  "buildingtype",
+  "nearestroad",
+  "distance",
+  "buildingpercnt",
+  "aqarage",
+  "theneighbor",
+  "previewtype",
+  "genrallocation",
+  "architecturaldesign",
+  "attributed",
+  "tagz",
+  "specialarea",
+  "roadsasphalt",
+  "roadslighting",
+  "roadstimberland",
+  "roadsberth",
+  "areaaccordinglicense",
+  "extrafiled",
+  "theamountrequired",
+  "ishavewater_",
+  "ishaveelectric",
+  "ishavephone",
+  "ishavesanitation",
+  "ishavenetworkflooddrainage",
+  "ishavecurrentwaslaunched",
+  "acisinstalled",
+  "ishavecentral",
+  "isboradspilit",
+  "ishavedesert",
+  "ishavewindow",
+  "ishaveseparateairconditioning",
+  "ishaveonlyconnections",
+  "structuralstructure",
+  "ishavedoublewall",
+  "ishavedoubleglass",
+  "ishavegypsumwithroof",
+  "ishavehiddenlighting",
+  "ishaveelectricgarage",
+  "ishavenormalgarage",
+  "ishavegates",
+  "ishavelifts",
+  "ishaveheaters",
+  "ishavearabicbath",
+  "ishaveforeigner",
+  "ishavestairs",
+  "ishavewall",
+  "typeofbishop",
+  "typeofinsulation",
+  "finisingtype",
+  "finishingnorth",
+  "finishingsouth",
+  "finishingeastern",
+  "finishingwest",
+  "finishingahwash",
+  "finishingreception",
+  "finishingentrance",
+  "finishingrooms",
+  "qualityofflooroutdoor",
+  "mjalsfloor",
+  "eatinghalls",
+  "finishinginternal",
+  "finishingexternal",
+  "externalwallcomponents",
+  "windowstype",
+  "plammingtype",
+  "innerpaint",
+  "gypusmtype",
+  "qualityofgypusmworker",
+  "description_of_structural_defects",
+  "propertytype",
+  "buildingavilablity",
+  "easytosold",
+  "numberofmetersofelectricity",
+  "electricitymeternumbers",
+  "numberofwatermeters",
+  "countersofwatermeters",
+  "finishing",
+  "explain",
+  "proxmitymantiancecost",
+  "observationandshortcomingsbuilding",
+  "proxmitymantainccostbuilding",
+  "majalescount",
+  "eatingroomcount",
+  "sleeproomcount",
+  "kitchenscount",
+  "wccounts",
+  "jakozeescount",
+  "gardencount",
+  "housekeeperroomcount",
+  "securtiesroomcount",
+  "basementcount",
+  "hallscount",
+  "appendxcount",
+  "elvatorscount",
+  "carbarkingscount",
+  "kidsstidocount",
+  "swimingpoolcount",
+  "warehousecount",
+  "othercount",
+  "mosquname",
+  "mosqudistance",
+  "gardenname",
+  "gardendistance",
+  "medicalname",
+  "medicaldistance",
+  "educationalname",
+  "educationaldistance",
+  "securityname",
+  "securitydistance",
+  "govermentname",
+  "governamedistance",
+  "commercialname",
+  "commercialdistance",
+  "highwayname",
+  "highwaydistance",
+  "report_type",
+  "value_basis",
+  "value_hypothesis",
+  "market_select",
+  "market_amount",
+  "market_method",
+  "cost_select",
+  "cost_amount",
+  "cost_method",
+  "income_select",
+  "income_amount",
+  "income_method1",
+  "market_cost",
+  "cost_cost",
+  "income_cost",
+  "last_value",
+  "the_property_is_as_if_it_was_completed",
+  "files",
+  "special_assumptions",
+  "evaluators_opinion",
+  "aqar_desc",
+  "evaluation",
+  "evaluation_name",
+  "evaluation_date",
+  "evaluation_pricing",
+  "review",
+  "review_name",
+  "review_date",
+  "sender",
+  "sender_name",
+  "report_date",
+  "client_pricing",
+  "qima_register",
+  "qima_name",
+  "register_date",
+  "qima_qr",
+  "market_approach",
+  "comparisons_method",
+  "heuristic_method",
+  "cost_approach",
+  "destructive_replacement_method",
+  "collection_method",
+  "income_method",
+  "investment_method",
+  "residual_value_method",
+  "samples2_tab",
+  "reason1",
+  "reason2",
+  "reason3",
+  "reason4",
+  "reason5",
+  "reason6",
+  "reason7",
+  "reason8",
+  "reason9",
+  "reason10",
+  "reason11",
+  "reason12",
+  "reason13",
+  "reason14",
+  "reason15",
+  "trading",
+  "growth",
+  "insulated",
+  "tiled",
+  "buildings_tab",
+  "aqartype1",
+  "gada1",
+  "type1",
+  "date1",
+  "area1",
+  "meterprice1",
+  "price1",
+  "distance1",
+  "streets1",
+  "width1",
+  "location1",
+  "aqartype2",
+  "gada2",
+  "type2",
+  "date2",
+  "area2",
+  "meterprice2",
+  "price2",
+  "distance2",
+  "streets2",
+  "width2",
+  "location2",
+  "aqartype3",
+  "gada3",
+  "type3",
+  "date3",
+  "area3",
+  "meterprice3",
+  "price3",
+  "distance3",
+  "streets3",
+  "width3",
+  "location3",
+  "time_factor1",
+  "terms1",
+  "conditions1",
+  "total_financing1",
+  "selling_after1",
+  "space1",
+  "general_site1",
+  "streets_1",
+  "main_street1",
+  "land_level1",
+  "nature_of_use1",
+  "roles_allowed1",
+  "others1",
+  "other_adjustments1",
+  "selling_price1",
+  "time_factor2",
+  "terms2",
+  "conditions2",
+  "total_financing2",
+  "selling_after2",
+  "space2",
+  "general_site2",
+  "streets_2",
+  "main_street2",
+  "land_level2",
+  "nature_of_use2",
+  "roles_allowed2",
+  "others2",
+  "other_adjustments2",
+  "selling_price2",
+  "time_factor3",
+  "terms3",
+  "conditions3",
+  "total_financing3",
+  "selling_after3",
+  "space3",
+  "general_site3",
+  "streets_3",
+  "main_street3",
+  "land_level3",
+  "nature_of_use3",
+  "roles_allowed3",
+  "others3",
+  "other_adjustments3",
+  "selling_price3",
+  "weight1",
+  "contribution1",
+  "weight2",
+  "contribution2",
+  "weight3",
+  "contribution3",
+  "meter_price",
+  "market_value",
+  "lands_tab",
+  "lands_aqartype1",
+  "lands_gada1",
+  "lands_type1",
+  "lands_date1",
+  "lands_area1",
+  "lands_meterprice1",
+  "lands_price1",
+  "lands_distance1",
+  "lands_streets1",
+  "lands_width1",
+  "lands_location1",
+  "lands_aqartype2",
+  "lands_gada2",
+  "lands_type2",
+  "lands_date2",
+  "lands_area2",
+  "lands_meterprice2",
+  "lands_price2",
+  "lands_distance2",
+  "lands_streets2",
+  "lands_width2",
+  "lands_location2",
+  "lands_aqartype3",
+  "lands_gada3",
+  "lands_type3",
+  "lands_date3",
+  "lands_area3",
+  "lands_meterprice3",
+  "lands_price3",
+  "lands_distance3",
+  "lands_streets3",
+  "lands_width3",
+  "lands_location3",
+  "lands_time_factor1",
+  "lands_terms1",
+  "lands_conditions1",
+  "lands_total_financing1",
+  "lands_selling_after1",
+  "lands_space1",
+  "lands_general_site1",
+  "lands_streets_1",
+  "lands_main_street1",
+  "lands_land_level1",
+  "lands_nature_of_use1",
+  "lands_roles_allowed1",
+  "lands_others1",
+  "lands_other_adjustments1",
+  "lands_selling_price1",
+  "lands_time_factor2",
+  "lands_terms2",
+  "lands_conditions2",
+  "lands_total_financing2",
+  "lands_selling_after2",
+  "lands_space2",
+  "lands_general_site2",
+  "lands_streets_2",
+  "lands_main_street2",
+  "lands_land_level2",
+  "lands_nature_of_use2",
+  "lands_roles_allowed2",
+  "lands_others2",
+  "lands_other_adjustments2",
+  "lands_selling_price2",
+  "lands_time_factor3",
+  "lands_terms3",
+  "lands_conditions3",
+  "lands_total_financing3",
+  "lands_selling_after3",
+  "lands_space3",
+  "lands_general_site3",
+  "lands_streets_3",
+  "lands_main_street3",
+  "lands_land_level3",
+  "lands_nature_of_use3",
+  "lands_roles_allowed3",
+  "lands_others3",
+  "lands_other_adjustments3",
+  "lands_selling_price3",
+  "lands_weight1",
+  "lands_contribution1",
+  "lands_weight2",
+  "lands_contribution2",
+  "lands_weight3",
+  "lands_contribution3",
+  "lands_meter_price",
+  "lands_market_value",
+  "cost_tab",
+  "check",
+  "meterprice",
+  "earthtotal",
+  "vaultaera",
+  "vaultmeterprice",
+  "vaulttotal",
+  "groundflooraera",
+  "groundfloormeterprice",
+  "groundfloortotal",
+  "firstroundaera",
+  "firstroundmeterprice",
+  "firstroundtotal",
+  "secondroundaera",
+  "secondroundmeterprice",
+  "secondroundtotal",
+  "recurringroundaera",
+  "recurringroundmeterprice",
+  "recurringroundtotal",
+  "annexearthaera",
+  "annexearthmeterprice",
+  "annexearthtotal",
+  "topannexroundaera",
+  "topannexmeterprice",
+  "topannextotal",
+  "mizanaera",
+  "mizanmeterprice",
+  "mizantotal",
+  "appartmentarea",
+  "appartmentmeterprice",
+  "appartmenttotal",
+  "othersaera",
+  "othersmeterprice",
+  "otherstotal",
+  "speciaarea",
+  "speciameterprice",
+  "speciatotal",
+  "fencesaera",
+  "fencesmeterprice",
+  "fencestotal",
+  "gardenaera",
+  "gardenmeterprice",
+  "gardentotal",
+  "swimpoolaera",
+  "swimmeterprice",
+  "swimtotal",
+  "totalarea1",
+  "totalprice1",
+  "buildingprice",
+  "age",
+  "defaultage",
+  "lost",
+  "lostamount",
+  "profit",
+  "profitamount",
+  "after_profit_amount",
+  "after_lost_amout",
+  "error",
+  "lower_amount",
+  "higher_amount",
+  "values_tab",
+  "section_break_rrjb",
+  "dicription",
+  "residual_tab",
+  "eartharea",
+  "major",
+  "secondary",
+  "residential",
+  "industrial",
+  "gardens",
+  "educational",
+  "public_services",
+  "total_ratio",
+  "gdv",
+  "major_space",
+  "secondary_space",
+  "residential_space",
+  "industrial_space",
+  "gardens_space",
+  "educational_space",
+  "public_services_space",
+  "major_price",
+  "secondary_price",
+  "residential_price",
+  "industrial_price",
+  "gardens_price",
+  "educational_price",
+  "public_services_price",
+  "major_total",
+  "secondary_total",
+  "residential_total",
+  "industrial_total",
+  "gardens_total",
+  "educational_total",
+  "public_services_total",
+  "average_cost",
+  "financing",
+  "legal",
+  "marketing",
+  "incidental_costs",
+  "risks",
+  "dc",
+  "average_cost_total",
+  "financing_total",
+  "legal_total",
+  "marketing_total",
+  "incidental_costs_total",
+  "risks_total",
+  "duration",
+  "profit_margin",
+  "gross_profit",
+  "won",
+  "value",
+  "discount",
+  "factor",
+  "current",
+  "current_price",
+  "capitalization_tab",
+  "apartments",
+  "shops",
+  "offices",
+  "other",
+  "apartments_rent",
+  "shops_rent",
+  "offices_rent",
+  "other_rent",
+  "rent_total",
+  "rent_percent",
+  "rent_value",
+  "rented1",
+  "rented2",
+  "rented3",
+  "own1",
+  "own2",
+  "own3",
+  "cont1",
+  "cont2",
+  "cont3",
+  "tasnif1",
+  "tasnif2",
+  "tasnif3",
+  "gross_income",
+  "vacancyrate",
+  "value_of_vacancies1",
+  "totaleffectiveincome",
+  "operatingexpenseratio",
+  "operationandmaintenance_expenses",
+  "income11",
+  "capitalization_rate11",
+  "property_value11",
+  "property_value1111",
+  "leveling",
+  "amended_from",
+  "collection",
+  "eartharea1",
+  "meterprice11",
+  "earthtotal1",
+  "totalprice11",
+  "buildingprice1",
+  "building_flats1",
+  "building_flats_meter1",
+  "building_flats_amount1",
+  "age1",
+  "defaultage1",
+  "profit1",
+  "profitamount1",
+  "after_profit_amount1",
+  "lost1",
+  "lostamount1",
+  "after_lost_amout1",
+  "error1",
+  "lower_amount1",
+  "higher_amount1",
+  "latitude",
+  "longitude",
+  "commentsreson"
+ ],
+ "fields": [
+  {
+   "fieldname": "samples_tap",
+   "fieldtype": "Tab Break",
+   "label": "Samples Tap"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0639\u0645\u064a\u0644",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062f\u0648\u0631\u0629 \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u064a\u0629",
+   "options": "\u062a\u0645\u0648\u064a\u0644\n\u0623\u0641\u0631\u0627\u062f\n\u0628\u0646\u0627\u0621 \u0630\u0627\u062a\u064a\n\u0623\u0635\u0648\u0644\n\u0634\u0631\u0643\u0627\u062a\n\u0623\u0635\u0648\u0644 \u0623\u0641\u0631\u0627\u062f",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose_of_evaluation",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u063a\u0631\u0636 \u0645\u0646 \u0627\u0644\u062a\u0642\u064a\u064a\u0645",
+   "length": 100,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commissioningnumber",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062a\u0643\u0644\u064a\u0641 (\u0627\u0644\u0637\u0644\u0628)",
+   "length": 20,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dateofcommissioning",
+   "fieldtype": "Datetime",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0643\u0644\u064a\u0641",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deliverydate",
+   "fieldtype": "Datetime",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0633\u0644\u064a\u0645",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "\u0631\u0642\u0645 \u0639\u0631\u0636 \u0627\u0644\u0633\u0639\u0631",
+   "options": "Quotation"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0645\u0646\u0637\u0642\u0629",
+   "options": "\u0645\u0643\u0629 \u0627\u0644\u0645\u0643\u0631\u0645\u0629\n\u0627\u0644\u0631\u064a\u0627\u0636\n\u0627\u0644\u0642\u0635\u064a\u0645\n\u0627\u0644\u0634\u0631\u0642\u064a\u0629\n\u0639\u0633\u064a\u0631\n\u062a\u0628\u0648\u0643\n\u062d\u0627\u0626\u0644\n\u0627\u0644\u062d\u062f\u0648\u062f \u0627\u0644\u0634\u0645\u0627\u0644\u064a\u0629\n\u062c\u0627\u0632\u0627\u0646\n\u0646\u062c\u0631\u0627\u0646\n\u0627\u0644\u0628\u0627\u062d\u0629\n\u0627\u0644\u062c\u0648\u0641\n\u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0645\u0646\u0648\u0631\u0629",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0645\u062f\u064a\u0646\u0629",
+   "length": 40,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gada",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062d\u064a",
+   "length": 40,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customerid",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0647\u0648\u064a\u0629 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "length": 50,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "owner2",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0627\u0644\u0643 \u0627\u0644\u0639\u0642\u0627\u0631",
+   "length": 150,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ownermobile",
+   "fieldtype": "Small Text",
+   "label": "\u062c\u0648\u0627\u0644 \u0627\u0644\u0645\u0627\u0644\u0643",
+   "length": 20,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "willtoevalution",
+   "fieldtype": "Small Text",
+   "label": "\u0637\u0627\u0644\u0628 \u0627\u0644\u062a\u0642\u064a\u064a\u0645",
+   "length": 50,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "willtoevalutionmoblie",
+   "fieldtype": "Small Text",
+   "label": "\u062c\u0648\u0627\u0644 \u0637\u0627\u0644\u0628 \u0627\u0644\u062a\u0642\u064a\u064a\u0645",
+   "length": 20,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instrementnumber",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0635\u0643",
+   "length": 150,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instrementdate",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0635\u0643",
+   "length": 150,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instrementlocation",
+   "fieldtype": "Small Text",
+   "label": " \u0645\u0643\u0627\u0646 \u0627\u0635\u062f\u0627\u0631 \u0627\u0644\u0635\u0643 ",
+   "length": 20,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plannednumber",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u062e\u0637\u0637",
+   "length": 20,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blocknumber",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0628\u0644\u0648\u0643",
+   "length": 10,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "piecenumber",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0642\u0637\u0639\u0629",
+   "length": 99,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "piecenumber2",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0628\u0646\u0649",
+   "length": 99,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "buildingpermitnumber",
+   "fieldtype": "Small Text",
+   "label": " \u0631\u0642\u0645 \u0641\u0633\u062d \u0627\u0644\u0628\u0646\u0627\u0621 (\u0631\u0642\u0645 \u0627\u0644\u0631\u062e\u0635\u0629)",
+   "length": 15,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "buildingpermitdate",
+   "fieldtype": "Small Text",
+   "label": " \u062a\u0627\u0631\u064a\u062e \u0641\u0633\u062d \u0627\u0644\u0628\u0646\u0627\u0621 ",
+   "length": 10,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "buildingpermitlocation",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0635\u062f\u0631 \u0627\u0644\u0631\u062e\u0635\u0629",
+   "length": 20,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "licebcetype",
+   "fieldtype": "Small Text",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0631\u062e\u0635\u0629",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "plannername",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062e\u0637\u0637",
+   "length": 30,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "aqarcode",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0645\u0632 \u0627\u0644\u0639\u0642\u0627\u0631",
+   "length": 20,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "unitnumber",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0648\u062d\u062f\u0629",
+   "length": 10,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "otherusers",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646 \u0622\u062e\u0631\u064a\u0646",
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "zradecision",
+   "fieldtype": "Small Text",
+   "label": "\u0642\u0631\u0627\u0631 \u0632\u0631\u0639\u0629",
+   "length": 15,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "zradecisiondate",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0632\u0631\u0639\u0629",
+   "length": 10,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "contractorname",
+   "fieldtype": "Small Text",
+   "label": "\u0625\u0633\u0645 \u0627\u0644\u0645\u0642\u0627\u0648\u0644",
+   "length": 30,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "northern_border",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062d\u062f \u0627\u0644\u0634\u0645\u0627\u0644\u064a",
+   "length": 100,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "southern_border",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062d\u062f \u0627\u0644\u062c\u0646\u0648\u0628\u064a",
+   "length": 100,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "eastern_border",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062d\u062f \u0627\u0644\u0634\u0631\u0642\u064a",
+   "length": 100,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "western_border",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062d\u062f \u0627\u0644\u063a\u0631\u0628\u064a",
+   "length": 100,
+   "max_height": "28px",
+   "reqd": 1
+  },
+  {
+   "fieldname": "northern_length",
+   "fieldtype": "Small Text",
+   "label": "\u0628\u0637\u0648\u0644",
+   "length": 150,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "southern_length",
+   "fieldtype": "Small Text",
+   "label": "\u0628\u0637\u0648\u0644",
+   "length": 150,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "eastern_length",
+   "fieldtype": "Small Text",
+   "label": "\u0628\u0637\u0648\u0644",
+   "length": 150,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "western_length",
+   "fieldtype": "Small Text",
+   "label": "\u0628\u0637\u0648\u0644",
+   "length": 150,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "sequancnumber",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062a\u0633\u0644\u0633\u0644",
+   "length": 10,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "codenumber",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0643\u0648\u062f",
+   "length": 10,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "noteforentring",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "categoty",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0639\u0642\u0627\u0631 (\u0623\u0631\u0636-\u0645\u0628\u0646\u0649)",
+   "options": "\n\u0623\u0631\u0636\n\u0645\u0628\u0646\u0649"
+  },
+  {
+   "fieldname": "floors",
+   "fieldtype": "Float",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0623\u062f\u0648\u0627\u0631"
+  },
+  {
+   "fieldname": "aqarclassfication",
+   "fieldtype": "Select",
+   "label": " \u062a\u0635\u0646\u064a\u0641 \u0627\u0644\u0639\u0642\u0627\u0631 ",
+   "options": "\n\u0635\u0646\u0627\u0639\u064a \u062a\u062c\u0627\u0631\u064a\n\u062a\u0631\u0641\u064a\u0647\u064a \u062e\u062f\u0645\u064a\n\u0634\u0639\u0628\u064a\n\u0627\u0631\u0636\n\u0627\u0633\u062a\u0631\u0627\u062d\u0647\n-\n\u0633\u0643\u0646\u064a \u062a\u062c\u0627\u0631\u064a\n\u0627\u0631\u0636 \u062e\u0627\u0645\n\u0645\u0631\u0641\u0642 \u0635\u062d\u064a\n\u0633\u0643\u0646\u064a\n\u0635\u0646\u0627\u0639\u064a\n\u0632\u0631\u0627\u0639\u064a\n\u0632\u0631\u0627\u0639\u0629\n\u0645\u0633\u062a\u0648\u062f\u0639\u0627\u062a\n\u0645\u062f\u0631\u0633\u0647\n\u062a\u062c\u0627\u0631\u064a\n\u0645\u0631\u0641\u0642 \u062a\u0639\u0644\u064a\u0645\u064a\n\u0645\u0633\u0637\u062d\u0629\n\u062d\u0631\u0645 \u0627\u0628\u0631\u0627\u062c \u0643\u0647\u0631\u0628\u0627\u0621\nopen\n\u062a\u062c\u0627\u0631\u064a \u0645\u0643\u062a\u0628\u064a\n\u0645\u0631\u0641\u0642 \u062a\u0639\u0644\u064a\u0645\u064a\n\u0628\u062f\u0648\u0646\n\u0633\u064a\u0627\u062d\u064a\n\u0623\u062e\u0631\u0649\n\u0645\u0631\u0641\u0642\n\u0632\u0631\u0627\u0639\u064a\n\u062a\u0631\u0641\u064a\u0647\u064a"
+  },
+  {
+   "fieldname": "unitcount",
+   "fieldtype": "Small Text",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0648\u062d\u062f\u0627\u062a",
+   "length": 3,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "appartmentname",
+   "fieldtype": "Small Text",
+   "label": " \u0631\u0642\u0645 \u0627\u0644\u0634\u0642\u0647 ",
+   "length": 3,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "floorname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0637\u0627\u0628\u0642",
+   "length": 50,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "govtype",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u0631\u0641\u0642",
+   "options": "\u063a\u064a\u0631 \u062d\u0643\u0648\u0645\u064a\n\u062d\u0643\u0648\u0645\u064a"
+  },
+  {
+   "fieldname": "govname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0641\u0642",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "isaqaridenticalwithbuildinglicense",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0639\u0642\u0627\u0631 \u0645\u0637\u0627\u0628\u0642 \u0644\u0644\u0631\u062e\u0635\u0629",
+   "options": "\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "buildingstate",
+   "fieldtype": "Select",
+   "label": " \u062d\u0627\u0644\u0629 \u0627\u0644\u0645\u0628\u0646\u064a ",
+   "options": "\n\u0645\u0645\u062a\u0627\u0632\n\u062c\u064a\u062f \u062c\u062f\u0622\n\u062c\u064a\u062f\n\u0631\u062f\u0626\n\u0645\u062a\u0647\u0627\u0644\u0643\n-\n\u062c\u0632\u0621 \u062e\u0627\u0644\u064a \u0648\u062c\u0632\u0621 \u0645\u0624\u062c\u0631"
+  },
+  {
+   "fieldname": "buildingtype",
+   "fieldtype": "Select",
+   "label": " \u0646\u0648\u0639 \u0627\u0644\u0645\u0628\u0646\u064a ",
+   "options": "\n\u062c\u062f\u064a\u062f\n\u0645\u0633\u062a\u062e\u062f\u0645\n\u0642\u064a\u062f \u0627\u0644\u0623\u0646\u0634\u0627\u0621\n\u0627\u062e\u0631\u0649\n\u0645\u062c\u062f\u062f"
+  },
+  {
+   "fieldname": "nearestroad",
+   "fieldtype": "Small Text",
+   "label": " \u0627\u0642\u0631\u0628 \u0634\u0627\u0631\u0639",
+   "length": 30,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Small Text",
+   "label": " \u0639\u0644\u064a \u0628\u0639\u062f",
+   "length": 20,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "buildingpercnt",
+   "fieldtype": "Percent",
+   "label": "\u0646\u0633\u0628\u0629 \u0627\u0644\u0628\u0646\u0627\u0621"
+  },
+  {
+   "fieldname": "aqarage",
+   "fieldtype": "Float",
+   "label": "\u0639\u0645\u0631 \u0627\u0644\u0628\u0646\u0627\u0621"
+  },
+  {
+   "fieldname": "theneighbor",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u062c\u0627\u0631",
+   "options": "\n\u0645\u0628\u0646\u064a\n\u063a\u064a\u0631 \u0645\u0628\u0646\u064a"
+  },
+  {
+   "fieldname": "previewtype",
+   "fieldtype": "Select",
+   "label": " \u062d\u062f\u0648\u062f \u0627\u0644\u0645\u0639\u0627\u064a\u0646\u0629 ",
+   "options": "\n\u062f\u0627\u062e\u0644 \u0648\u062e\u0627\u0631\u062c \u0627\u0644\u0639\u0642\u0627\u0631\n\u062f\u0627\u062e\u0644 \u0627\u0644\u0639\u0642\u0627\u0631\n\u062e\u0627\u0631\u062c \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "genrallocation",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0645\u0648\u0642\u0639 \u0627\u0644\u0639\u0627\u0645",
+   "options": "\n\u062f\u0627\u062e\u0644 \u0627\u0644\u0646\u0637\u0627\u0642\n\u0627\u0644\u0645\u0631\u062d\u0644\u0629 \u0627\u0644\u0623\u0648\u0644\u0649\n\u0627\u0644\u0645\u0631\u062d\u0644\u0629 \u0627\u0644\u062b\u0627\u0646\u064a\u0629\n\u062e\u0627\u0631\u062c \u0627\u0644\u0646\u0637\u0627\u0642\n\u0635\u0646\u0627\u0639\u064a\u0629\n\u0645\u0646\u0637\u0642\u0629 \u0639\u0634\u0648\u0627\u0626\u064a\u0629\n\u0627\u0635\u0646\u0627\u0639\u064a\u0629 / \u0648\u0631\u0634\n\u0645\u0646\u0637\u0642\u0629 \u0639\u0634\u0648\u0627\u0626\u064a\u0629\n\u0635\u0646\u0627\u0639\u064a\u0629 / \u0648\u0631\u0634"
+  },
+  {
+   "fieldname": "architecturaldesign",
+   "fieldtype": "Select",
+   "label": " \u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0639\u0645\u0627\u0631\u064a ",
+   "options": "\n\u0645\u0645\u062a\u0627\u0632\n\u062c\u064a\u062f\n\u0631\u062f\u0626"
+  },
+  {
+   "fieldname": "attributed",
+   "fieldtype": "Select",
+   "label": "\u0645\u0646\u0633\u0648\u0628 \u0627\u0644\u0623\u0631\u0636",
+   "options": "\n\u0645\u0633\u062a\u0648\u064a\n\u0645\u0631\u062a\u0641\u0639\n\u0645\u0646\u062e\u0641\u0636"
+  },
+  {
+   "fieldname": "tagz",
+   "fieldtype": "Float",
+   "label": "\u0631\u0642\u0645 \u0645\u062d\u0636\u0631 \u0627\u0644\u062a\u062c\u0632\u0626\u0629"
+  },
+  {
+   "fieldname": "specialarea",
+   "fieldtype": "Float",
+   "label": "\u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u062c\u0632\u0621 \u0627\u0644\u062e\u0627\u0635"
+  },
+  {
+   "fieldname": "roadsasphalt",
+   "fieldtype": "Select",
+   "label": "\u0633\u0641\u0644\u0629 \u0627\u0644\u0634\u0648\u0627\u0631\u0639",
+   "options": "\n\u0645\u0633\u0641\u0644\u062a\u0629\n\u063a\u064a\u0631 \u0645\u0633\u0641\u0644\u062a\u0629"
+  },
+  {
+   "fieldname": "roadslighting",
+   "fieldtype": "Select",
+   "label": "\u0625\u0636\u0627\u0629 \u0627\u0644\u0634\u0648\u0627\u0631\u0639",
+   "options": "\n\u0645\u0636\u0627\u0621\u0629\n\u063a\u064a\u0631 \u0645\u0636\u0627\u0621\u0629"
+  },
+  {
+   "fieldname": "roadstimberland",
+   "fieldtype": "Select",
+   "label": "\u062a\u0634\u062c\u064a\u0631 \u0627\u0644\u0634\u0648\u0627\u0631\u0639",
+   "options": "\n\u0645\u0634\u062c\u0631\u0629\n\u063a\u064a\u0631 \u0645\u0634\u062c\u0631\u0629"
+  },
+  {
+   "fieldname": "roadsberth",
+   "fieldtype": "Select",
+   "label": "\u0631\u0635\u0641 \u0627\u0644\u0634\u0648\u0627\u0631\u0639",
+   "options": "\n\u0645\u0631\u0635\u0641\u0629\n\u063a\u064a\u0631 \u0645\u0631\u0635\u0641\u0629"
+  },
+  {
+   "fieldname": "areaaccordinglicense",
+   "fieldtype": "Small Text",
+   "label": " \u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u0628\u0646\u0627\u0621 \u062d\u0633\u0628 \u0627\u0644\u0631\u062e\u0635\u0629 ",
+   "length": 10,
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "extrafiled",
+   "fieldtype": "Currency",
+   "label": " \u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u062a\u0648\u0642\u0639\u0629 \u0644\u0628\u0646\u0627\u0621 \u0627\u0644\u0639\u0642\u0627\u0631 "
+  },
+  {
+   "fieldname": "theamountrequired",
+   "fieldtype": "Currency",
+   "label": " \u0627\u0644\u0645\u0628\u0644\u063a \u0627\u0644\u0645\u0637\u0644\u0648\u0628 \u0645\u0646 \u0627\u0644\u0639\u0645\u064a\u0644 \u0644\u0644\u0628\u0646\u0627\u0621 "
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavewater_",
+   "fieldtype": "Check",
+   "label": "\u0645\u064a\u0627\u0647 "
+  },
+  {
+   "default": "0",
+   "fieldname": "ishaveelectric",
+   "fieldtype": "Check",
+   "label": "\u0643\u0647\u0631\u0628\u0627\u0621 "
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavephone",
+   "fieldtype": "Check",
+   "label": "\u0647\u0627\u062a\u0641"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavesanitation",
+   "fieldtype": "Check",
+   "label": "\u0635\u0631\u0641 \u0635\u062d\u064a "
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavenetworkflooddrainage",
+   "fieldtype": "Check",
+   "label": "\u0634\u0628\u0643\u0629 \u062a\u0635\u0631\u064a\u0641 \u0633\u064a\u0648\u0644 "
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavecurrentwaslaunched",
+   "fieldtype": "Check",
+   "label": "\u062a\u0645 \u0627\u0637\u0644\u0627\u0642 \u0627\u0644\u062a\u064a\u0627\u0631 "
+  },
+  {
+   "fieldname": "acisinstalled",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0645\u0643\u064a\u0641 \u0645\u0631\u0643\u0628\u061f",
+   "options": "\n\u0645\u0631\u0643\u0628\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavecentral",
+   "fieldtype": "Check",
+   "label": "\u0645\u0631\u0643\u0632\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "isboradspilit",
+   "fieldtype": "Check",
+   "label": "\u062f\u0648\u0644\u0627\u0628/\u0633\u0628\u0644\u064a\u062a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavedesert",
+   "fieldtype": "Check",
+   "label": "\u0635\u062d\u0631\u0627\u0648\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavewindow",
+   "fieldtype": "Check",
+   "label": "\u0634\u0628\u0627\u0643"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishaveseparateairconditioning",
+   "fieldtype": "Check",
+   "label": "\u062a\u0643\u064a\u064a\u0641 \u0645\u0646\u0641\u0635\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishaveonlyconnections",
+   "fieldtype": "Check",
+   "label": "\u062a\u0648\u0635\u064a\u0644\u0627\u062a \u0641\u0642\u0637"
+  },
+  {
+   "fieldname": "structuralstructure",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0647\u064a\u0643\u0644 \u0627\u0644\u0625\u0646\u0634\u0627\u0626\u064a",
+   "options": "\n\u062e\u0631\u0633\u0627\u0646\u064a\n\u0645\u0628\u0627\u0646\u064a \u0645\u0639\u062f\u0646\u064a\u0629\n\u062d\u0648\u0627\u0626\u0637 \u062d\u0627\u0645\u0644\u0629\n\u0645\u0628\u0627\u0646\u064a \u062e\u0634\u0628\u064a\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavedoublewall",
+   "fieldtype": "Check",
+   "label": "\u062d\u0627\u0626\u0637 \u0645\u0632\u062f\u0648\u062c"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavedoubleglass",
+   "fieldtype": "Check",
+   "label": "\u0632\u062c\u0627\u062c \u0645\u0632\u062f\u0648\u062c"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavegypsumwithroof",
+   "fieldtype": "Check",
+   "label": "\u062c\u0628\u0633 \u0628\u0627\u0644\u0633\u0642\u0641"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavehiddenlighting",
+   "fieldtype": "Check",
+   "label": "\u0625\u0636\u0627\u0621\u0629 \u0645\u062e\u0641\u064a\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishaveelectricgarage",
+   "fieldtype": "Check",
+   "label": "\u0643\u0631\u0627\u062c \u0643\u0647\u0631\u0628\u0627\u0626\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavenormalgarage",
+   "fieldtype": "Check",
+   "label": "\u0643\u0631\u0627\u062c \u0639\u0627\u062f\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavegates",
+   "fieldtype": "Check",
+   "label": "\u0628\u0648\u0627\u0628\u0627\u062a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavelifts",
+   "fieldtype": "Check",
+   "label": "\u0645\u0635\u0627\u0639\u062f"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishaveheaters",
+   "fieldtype": "Check",
+   "label": "\u0633\u062e\u0627\u0646\u0627\u062a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavearabicbath",
+   "fieldtype": "Check",
+   "label": "\u062d\u0645\u0627\u0645 \u0639\u0631\u0628\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishaveforeigner",
+   "fieldtype": "Check",
+   "label": "\u062d\u0645\u0627\u0645 \u0623\u0641\u0631\u0646\u062c\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavestairs",
+   "fieldtype": "Check",
+   "label": "\u0633\u0644\u0627\u0644\u0645"
+  },
+  {
+   "default": "0",
+   "fieldname": "ishavewall",
+   "fieldtype": "Check",
+   "label": "\u062d\u0627\u0626\u0637"
+  },
+  {
+   "fieldname": "typeofbishop",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0627\u0633\u0642\u0641",
+   "options": "\n\u062e\u0631\u0633\u0627\u0646\u064a\n\u0643\u0645\u0631\u0627\u062a \u062d\u062f\u064a\u062f\u064a\u0647\n\u0643\u0645\u0631\u0627\u062a \u062e\u0634\u0628\u064a\u0629\n\u0627\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "typeofinsulation",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0639\u0632\u0644",
+   "options": "\n\u062d\u0631\u0627\u0631\u064a\n\u062d\u0631\u0627\u0631\u064a \u0645\u0627\u0626\u064a\n\u0645\u0627\u0626\u064a\n\u0628\u062f\u0648\u0646"
+  },
+  {
+   "fieldname": "finisingtype",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u0634\u0637\u064a\u0628",
+   "options": "\n\u0639\u0627\u062f\u064a\n\u0641\u0627\u062e\u0631\n\u0639\u0638\u0645\n\u062f\u064a\u0644\u0648\u0643\u0633\n\u0633\u0648\u0628\u0631\u062f\u064a\u0644\u0648\u0643\u0633\n\u0628\u062f\u0648\u0646"
+  },
+  {
+   "fieldname": "finishingnorth",
+   "fieldtype": "Select",
+   "label": " \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0634\u0645\u0627\u0644\u064a\u0629 ",
+   "options": "\n\u062f\u0647\u0627\u0646\n\u062c\u0627\u0631\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644\n\u062d\u062c\u0631\n\u0631\u0634\u0629\n\u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u064a\u0643\u0627\u0633\u062a\n\u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645\n\u0627\u0633\u0648\u0627\u0631\n\u0632\u062c\u0627\u062c + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0631\u0634\u0629 \u0648\u0647\u0646\u0627\u062c\u0631\n\u0631\u0634\n\u062d\u062c\u0631 \u0648\u0632\u062c\u0627\u062c\n\u062a\u0635\u0645\u064a\u0645 \u062e\u0627\u0635\n\u0644\u064a\u0627\u0633\u0629\n\u0632\u062c\u0627\u062c\n\u0644\u0645 \u064a\u0643\u062a\u0645\u0644\n\u062d\u062c\u0631 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644 + \u0632\u062c\u0627\u062c\n\u0631\u062e\u0627\u0645 + \u062f\u0647\u0627\u0646\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u062d\u062c\u0631 + \u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645 \u0628\u0644\u0643 + \u0647\u0646\u0627\u062c\u0631\n\u0643\u0644\u0627\u062f\u0646\u062c+\u062f\u0647\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0647\u0646\u0627\u062c\u0631"
+  },
+  {
+   "fieldname": "finishingsouth",
+   "fieldtype": "Select",
+   "label": " \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u062c\u0646\u0648\u0628\u064a\u0629 ",
+   "options": "\n\u062f\u0647\u0627\u0646\n\u062c\u0627\u0631\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644\n\u062d\u062c\u0631\n\u0631\u0634\u0629\n\u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u064a\u0643\u0627\u0633\u062a\n\u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645\n\u0627\u0633\u0648\u0627\u0631\n\u0632\u062c\u0627\u062c + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0631\u0634\u0629 \u0648\u0647\u0646\u0627\u062c\u0631\n\u0631\u0634\n\u062d\u062c\u0631 \u0648\u0632\u062c\u0627\u062c\n\u062a\u0635\u0645\u064a\u0645 \u062e\u0627\u0635\n\u0644\u064a\u0627\u0633\u0629\n\u0632\u062c\u0627\u062c\n\u0644\u0645 \u064a\u0643\u062a\u0645\u0644\n\u062d\u062c\u0631 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644 + \u0632\u062c\u0627\u062c\n\u0631\u062e\u0627\u0645 + \u062f\u0647\u0627\u0646\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u062d\u062c\u0631 + \u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645 \u0628\u0644\u0643 + \u0647\u0646\u0627\u062c\u0631\n\u0643\u0644\u0627\u062f\u0646\u062c+\u062f\u0647\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0647\u0646\u0627\u062c\u0631"
+  },
+  {
+   "fieldname": "finishingeastern",
+   "fieldtype": "Select",
+   "label": " \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0634\u0631\u0642\u064a\u0629 ",
+   "options": "\n\u062f\u0647\u0627\u0646\n\u062c\u0627\u0631\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644\n\u062d\u062c\u0631\n\u0631\u0634\u0629\n\u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u064a\u0643\u0627\u0633\u062a\n\u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645\n\u0627\u0633\u0648\u0627\u0631\n\u0632\u062c\u0627\u062c + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0631\u0634\u0629 \u0648\u0647\u0646\u0627\u062c\u0631\n\u0631\u0634\n\u062d\u062c\u0631 \u0648\u0632\u062c\u0627\u062c\n\u062a\u0635\u0645\u064a\u0645 \u062e\u0627\u0635\n\u0644\u064a\u0627\u0633\u0629\n\u0632\u062c\u0627\u062c\n\u0644\u0645 \u064a\u0643\u062a\u0645\u0644\n\u062d\u062c\u0631 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644 + \u0632\u062c\u0627\u062c\n\u0631\u062e\u0627\u0645 + \u062f\u0647\u0627\u0646\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u062d\u062c\u0631 + \u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645 \u0628\u0644\u0643 + \u0647\u0646\u0627\u062c\u0631\n\u0643\u0644\u0627\u062f\u0646\u062c+\u062f\u0647\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0647\u0646\u0627\u062c\u0631"
+  },
+  {
+   "fieldname": "finishingwest",
+   "fieldtype": "Select",
+   "label": " \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u063a\u0631\u0628\u064a\u0629 ",
+   "options": "\n\u062f\u0647\u0627\u0646\n\u062c\u0627\u0631\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644\n\u062d\u062c\u0631\n\u0631\u0634\u0629\n\u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u064a\u0643\u0627\u0633\u062a\n\u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645\n\u0627\u0633\u0648\u0627\u0631\n\u0632\u062c\u0627\u062c + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0631\u0634\u0629 \u0648\u0647\u0646\u0627\u062c\u0631\n\u0631\u0634\n\u062d\u062c\u0631 \u0648\u0632\u062c\u0627\u062c\n\u062a\u0635\u0645\u064a\u0645 \u062e\u0627\u0635\n\u0644\u064a\u0627\u0633\u0629\n\u0632\u062c\u0627\u062c\n\u0644\u0645 \u064a\u0643\u062a\u0645\u0644\n\u062d\u062c\u0631 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u0628\u0631\u0648\u0641\u0627\u064a\u0644 + \u0632\u062c\u0627\u062c\n\u0631\u062e\u0627\u0645 + \u062f\u0647\u0627\u0646\n\u0643\u0633\u0631 \u0631\u062e\u0627\u0645 + \u0643\u0644\u0627\u062f\u0646\u062c\n\u062d\u062c\u0631 + \u0647\u0646\u0627\u062c\u0631\n\u0639\u0638\u0645 \u0628\u0644\u0643 + \u0647\u0646\u0627\u062c\u0631\n\u0643\u0644\u0627\u062f\u0646\u062c+\u062f\u0647\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0647\u0646\u0627\u062c\u0631"
+  },
+  {
+   "fieldname": "finishingahwash",
+   "fieldtype": "Select",
+   "label": " \u0627\u0631\u0636\u064a\u0629 \u0627\u0644\u0627\u062d\u0648\u0627\u0634 ",
+   "options": "\n\u0628\u0644\u0627\u0637\n\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u0644\u064a\u0627\u0633\u0629 \u0648\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u062a\u062d\u062a \u0627\u0644\u0627\u0646\u0634\u0627\u0621\n\u0631\u062e\u0627\u0645\n\u062d\u062c\u0631+\u062f\u0647\u0627\u0646\n\u0635\u0628\u0647\n\u0627\u0633\u0641\u0644\u062a\n\u0628\u0648\u0631\u0633\u0644\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0628\u0644\u0627\u0637\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "fieldname": "finishingreception",
+   "fieldtype": "Select",
+   "label": " \u0627\u0631\u0636\u064a\u0629 \u0627\u0644\u0627\u0633\u062a\u0642\u0628\u0627\u0644 ",
+   "options": "\n\u0628\u0644\u0627\u0637\n\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u0644\u064a\u0627\u0633\u0629 \u0648\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u062a\u062d\u062a \u0627\u0644\u0627\u0646\u0634\u0627\u0621\n\u0631\u062e\u0627\u0645\n\u062d\u062c\u0631+\u062f\u0647\u0627\u0646\n\u0635\u0628\u0647\n\u0627\u0633\u0641\u0644\u062a\n\u0628\u0648\u0631\u0633\u0644\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0628\u0644\u0627\u0637\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "fieldname": "finishingentrance",
+   "fieldtype": "Select",
+   "label": " \u0627\u0631\u0636\u064a\u0629 \u0627\u0644\u0645\u062f\u062e\u0644 ",
+   "options": "\n\u0628\u0644\u0627\u0637\n\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u0644\u064a\u0627\u0633\u0629 \u0648\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u062a\u062d\u062a \u0627\u0644\u0627\u0646\u0634\u0627\u0621\n\u0631\u062e\u0627\u0645\n\u062d\u062c\u0631+\u062f\u0647\u0627\u0646\n\u0635\u0628\u0647\n\u0627\u0633\u0641\u0644\u062a\n\u0628\u0648\u0631\u0633\u0644\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0628\u0644\u0627\u0637\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "fieldname": "finishingrooms",
+   "fieldtype": "Select",
+   "label": " \u0627\u0631\u0636\u064a\u0629 \u0627\u0644\u063a\u0631\u0641 ",
+   "options": "\n\u0628\u0644\u0627\u0637\n\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u0644\u064a\u0627\u0633\u0629 \u0648\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u062a\u062d\u062a \u0627\u0644\u0627\u0646\u0634\u0627\u0621\n\u0631\u062e\u0627\u0645\n\u062d\u062c\u0631+\u062f\u0647\u0627\u0646\n\u0635\u0628\u0647\n\u0627\u0633\u0641\u0644\u062a\n\u0628\u0648\u0631\u0633\u0644\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0628\u0644\u0627\u0637\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "fieldname": "qualityofflooroutdoor",
+   "fieldtype": "Select",
+   "label": " \u0646\u0648\u0639\u064a\u0629 \u0623\u0631\u0636\u064a\u0627\u062a \u0627\u0644\u0633\u0627\u062d\u0627\u062a \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 ",
+   "options": "\n\u0628\u0644\u0627\u0637\n\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u0644\u064a\u0627\u0633\u0629 \u0648\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u062a\u062d\u062a \u0627\u0644\u0627\u0646\u0634\u0627\u0621\n\u0631\u062e\u0627\u0645\n\u062d\u062c\u0631+\u062f\u0647\u0627\u0646\n\u0635\u0628\u0647\n\u0627\u0633\u0641\u0644\u062a\n\u0628\u0648\u0631\u0633\u0644\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0628\u0644\u0627\u0637\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "fieldname": "mjalsfloor",
+   "fieldtype": "Select",
+   "label": "\u0623\u0631\u0636\u064a\u0629 \u0627\u0644\u0645\u062c\u0627\u0644\u0633",
+   "options": "\n\u0628\u0644\u0627\u0637\n\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u0644\u064a\u0627\u0633\u0629 \u0648\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u062a\u062d\u062a \u0627\u0644\u0627\u0646\u0634\u0627\u0621\n\u0631\u062e\u0627\u0645\n\u062d\u062c\u0631+\u062f\u0647\u0627\u0646\n\u0635\u0628\u0647\n\u0627\u0633\u0641\u0644\u062a\n\u0628\u0648\u0631\u0633\u0644\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0628\u0644\u0627\u0637\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "fieldname": "eatinghalls",
+   "fieldtype": "Select",
+   "label": "\u0623\u0631\u0636\u064a\u0629 \u0635\u0627\u0644\u0627\u062a \u0627\u0644\u0637\u0639\u0627\u0645",
+   "options": "\n\u0628\u0644\u0627\u0637\n\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u0644\u064a\u0627\u0633\u0629 \u0648\u0633\u064a\u0631\u0627\u0645\u064a\u0643\n\u062a\u062d\u062a \u0627\u0644\u0627\u0646\u0634\u0627\u0621\n\u0631\u062e\u0627\u0645\n\u062d\u062c\u0631+\u062f\u0647\u0627\u0646\n\u0635\u0628\u0647\n\u0627\u0633\u0641\u0644\u062a\n\u0628\u0648\u0631\u0633\u0644\u0627\u0646\n\u0631\u062e\u0627\u0645 + \u0628\u0644\u0627\u0637\n\u063a\u064a\u0631 \u0645\u0631\u0643\u0628"
+  },
+  {
+   "fieldname": "finishinginternal",
+   "fieldtype": "Select",
+   "label": " \u0627\u0644\u0627\u0628\u0648\u0627\u0628 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629",
+   "options": "\n\u062e\u0634\u0628\n\u0632\u062c\u0627\u062c\n\u063a\u064a\u0631 \u0631\u0627\u0643\u0628\n\u062d\u062f\u064a\u062f\n\u062e\u0634\u0628/\u0632\u062c\u0627\u062c\n\u0627\u0644\u0645\u0646\u064a\u0648\u0645"
+  },
+  {
+   "fieldname": "finishingexternal",
+   "fieldtype": "Select",
+   "label": " \u0627\u0644\u0627\u0628\u0648\u0627\u0628 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629",
+   "options": "\n\u062e\u0634\u0628\n\u0632\u062c\u0627\u062c\n\u063a\u064a\u0631 \u0631\u0627\u0643\u0628\n\u062d\u062f\u064a\u062f\n\u062e\u0634\u0628/\u0632\u062c\u0627\u062c\n\u0627\u0644\u0645\u0646\u064a\u0648\u0645"
+  },
+  {
+   "fieldname": "externalwallcomponents",
+   "fieldtype": "Select",
+   "label": " \u0645\u0643\u0648\u0646\u0627\u062a \u0627\u0644\u062c\u062f\u0631\u0627\u0646 \u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629 ",
+   "options": "\n\u062e\u0634\u0628\n\u0632\u062c\u0627\u062c\n\u063a\u064a\u0631 \u0631\u0627\u0643\u0628\n\u062d\u062f\u064a\u062f\n\u062e\u0634\u0628/\u0632\u062c\u0627\u062c\n\u0627\u0644\u0645\u0646\u064a\u0648\u0645"
+  },
+  {
+   "fieldname": "windowstype",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639\u064a\u0629 \u0627\u0644\u0634\u0628\u0627\u0628\u064a\u0643",
+   "options": "\n\u062e\u0634\u0628\n\u0632\u062c\u0627\u062c\n\u063a\u064a\u0631 \u0631\u0627\u0643\u0628\n\u062d\u062f\u064a\u062f\n\u062e\u0634\u0628/\u0632\u062c\u0627\u062c\n\u0627\u0644\u0645\u0646\u064a\u0648\u0645"
+  },
+  {
+   "fieldname": "plammingtype",
+   "fieldtype": "Select",
+   "label": " \u0646\u0648\u0639\u064a\u0629 \u0627\u0644\u062a\u0633\u0644\u064a\u0643 \u0648\u0627\u0644\u0633\u0628\u0627\u0643\u0629 ",
+   "options": "\n\u0627\u0644\u0633\u0628\u0627\u0643\u0629 \u0627\u0644\u0645\u0639\u0644\u0642\u0629\n\u0627\u0644\u0633\u0628\u0627\u0643\u0629 \u0627\u0644\u0645\u062f\u0641\u0648\u0646\u0629"
+  },
+  {
+   "fieldname": "innerpaint",
+   "fieldtype": "Select",
+   "label": " \u0646\u0648\u0639\u064a\u0629 \u0627\u0644\u062f\u0647\u0627\u0646 \u0627\u0644\u062f\u0627\u062e\u0644\u064a ",
+   "options": "\n\u0623\u0633\u0627\u0633\n\u062f\u0647\u0627\u0646\u0627\u062a\n\u062a\u0639\u062a\u064a\u0642"
+  },
+  {
+   "fieldname": "gypusmtype",
+   "fieldtype": "Select",
+   "label": " \u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062c\u0628\u0633 ",
+   "options": "\n\u062c\u0628\u0633\u064a\u0627\u062a\n\u0644\u064a\u0627\u0633\u0629\n\u0623\u0633\u0642\u0641 \u0645\u0633\u062a\u0639\u0627\u0631\u0629\n\u063a\u064a\u0631 \u0645\u0643\u062a\u0645\u0644\n\u063a\u064a\u0631 \u0631\u0627\u0643\u0628"
+  },
+  {
+   "fieldname": "qualityofgypusmworker",
+   "fieldtype": "Select",
+   "label": " \u062c\u0648\u062f\u0629 \u0639\u0645\u0627\u0644 \u0627\u0644\u062c\u0628\u0633 ",
+   "options": "\n\u0645\u0645\u062a\u0627\u0632\u0629\n\u062c\u064a\u062f\u0629\n\u062c\u064a\u062f\u0629 \u062c\u062f\u0627\u064b\n\u0633\u064a\u0621"
+  },
+  {
+   "fieldname": "description_of_structural_defects",
+   "fieldtype": "Small Text",
+   "label": " \u0648\u0635\u0641 \u0627\u0644\u0639\u064a\u0648\u0628 \u0627\u0644\u0625\u0646\u0634\u0627\u0626\u064a\u0629",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "propertytype",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639\u064a\u0629 \u0627\u0644\u0645\u0644\u0643\u064a\u0629",
+   "options": "\n\u0645\u0637\u0644\u0642\u0629\n\u0631\u0647\u0646\n\u062c\u0632\u0621 \u0645\u0634\u0627\u0639"
+  },
+  {
+   "fieldname": "buildingavilablity",
+   "fieldtype": "Select",
+   "label": " \u0634\u0627\u063a\u0631\u064a\u0629 \u0627\u0644\u0645\u0628\u0646\u064a ",
+   "options": "\n\u062e\u0627\u0644\u064a\n\u0645\u0623\u0647\u0648\u0644\n\u062c\u0632\u0621 \u0645\u0648\u062c\u0631 \u0648\u0627\u0644\u0628\u0627\u0642\u064a \u062e\u0627\u0644\u064a"
+  },
+  {
+   "fieldname": "easytosold",
+   "fieldtype": "Select",
+   "label": " \u0633\u0647\u0648\u0644\u0629 \u0628\u064a\u0639 \u0627\u0644\u0639\u0642\u0627\u0631 ",
+   "options": "\n\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "numberofmetersofelectricity",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0639\u062f\u0627\u062f\u0627\u062a \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621"
+  },
+  {
+   "fieldname": "electricitymeternumbers",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0631\u0642\u0627\u0645 \u0639\u062f\u0627\u062f\u062a \u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "numberofwatermeters",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0639\u062f\u0627\u062f\u062a \u0627\u0644\u0645\u064a\u0627\u0647"
+  },
+  {
+   "fieldname": "countersofwatermeters",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0631\u0642\u0627\u0645 \u0639\u062f\u0627\u062f\u062a \u0627\u0644\u0645\u064a\u0627\u0647",
+   "max_height": "28px"
+  },
+  {
+   "default": "0",
+   "fieldname": "finishing",
+   "fieldtype": "Check",
+   "label": "\u0647\u0644 \u0627\u0644\u0639\u0642\u0627\u0631 \u0628\u0647 \u0628\u0639\u0636 \u0627\u0644\u062a\u0634\u0637\u064a\u0628\u0627\u062a \u0644\u0645 \u062a\u0643\u062a\u0645\u0644 \u0623\u0648 \u064a\u062d\u062a\u0627\u062c \u0644\u0635\u064a\u0627\u0646\u0629 \u0623\u0648 \u0628\u0647 \u0634\u0642\u0648\u0642"
+  },
+  {
+   "fieldname": "explain",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644\u0647\u0627",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "proxmitymantiancecost",
+   "fieldtype": "Currency",
+   "label": "\u062a\u0643\u0627\u0644\u064a\u0641 \u0627\u0644\u0635\u064a\u0627\u0646\u0629 \u0627\u0644\u062a\u0642\u062f\u064a\u0631\u064a\u0629 "
+  },
+  {
+   "fieldname": "observationandshortcomingsbuilding",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062a\u0634\u0637\u064a\u0628\u0627\u062a \u063a\u064a\u0631 \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0629",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "proxmitymantainccostbuilding",
+   "fieldtype": "Currency",
+   "label": "\u062a\u0643\u0644\u0641\u0629 \u0635\u064a\u0627\u0646\u0629 \u0627\u0644\u0639\u0642\u0627\u0631 \u0628\u0627\u0644\u062a\u0642\u0631\u064a\u0628"
+  },
+  {
+   "fieldname": "majalescount",
+   "fieldtype": "Int",
+   "label": "\u0627\u0644\u0645\u062c\u0627\u0644\u0633"
+  },
+  {
+   "fieldname": "eatingroomcount",
+   "fieldtype": "Int",
+   "label": "\u063a\u0631\u0641 \u0637\u0639\u0627\u0645"
+  },
+  {
+   "fieldname": "sleeproomcount",
+   "fieldtype": "Int",
+   "label": "\u063a\u0631\u0641 \u0646\u0648\u0645"
+  },
+  {
+   "fieldname": "kitchenscount",
+   "fieldtype": "Int",
+   "label": "\u0645\u0637\u0627\u0628\u062e"
+  },
+  {
+   "fieldname": "wccounts",
+   "fieldtype": "Int",
+   "label": "\u062f\u0648\u0631\u0627\u062a \u0627\u0644\u0645\u064a\u0627\u0647"
+  },
+  {
+   "fieldname": "jakozeescount",
+   "fieldtype": "Int",
+   "label": "\u062c\u0627\u0643\u0648\u0632\u064a"
+  },
+  {
+   "fieldname": "gardencount",
+   "fieldtype": "Int",
+   "label": "\u062d\u062f\u064a\u0642\u0629"
+  },
+  {
+   "fieldname": "housekeeperroomcount",
+   "fieldtype": "Int",
+   "label": "\u063a\u0631\u0641\u0629 \u062e\u0627\u062f\u0645\u0629"
+  },
+  {
+   "fieldname": "securtiesroomcount",
+   "fieldtype": "Int",
+   "label": "\u063a\u0631\u0641\u0629 \u062d\u0627\u0631\u0633"
+  },
+  {
+   "fieldname": "basementcount",
+   "fieldtype": "Int",
+   "label": "\u0642\u0628\u0648"
+  },
+  {
+   "fieldname": "hallscount",
+   "fieldtype": "Int",
+   "label": "\u0635\u0627\u0644\u0627\u062a"
+  },
+  {
+   "fieldname": "appendxcount",
+   "fieldtype": "Int",
+   "label": "\u0645\u0644\u0627\u062d\u0642"
+  },
+  {
+   "fieldname": "elvatorscount",
+   "fieldtype": "Int",
+   "label": "\u0645\u0635\u0627\u0639\u062f"
+  },
+  {
+   "fieldname": "carbarkingscount",
+   "fieldtype": "Int",
+   "label": "\u0645\u0648\u0627\u0642\u0641 \u0633\u064a\u0627\u0631\u0627\u062a"
+  },
+  {
+   "fieldname": "kidsstidocount",
+   "fieldtype": "Int",
+   "label": "\u0645\u0644\u0627\u0639\u0628 \u0623\u0637\u0641\u0627\u0644"
+  },
+  {
+   "fieldname": "swimingpoolcount",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0628\u062d"
+  },
+  {
+   "fieldname": "warehousecount",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u062a\u0648\u062f\u0639\u0627\u062a"
+  },
+  {
+   "fieldname": "othercount",
+   "fieldtype": "Int",
+   "label": "\u0623\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "mosquname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062c\u062f",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "mosqudistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0645\u0633\u062c\u062f \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "gardenname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u062d\u062f\u064a\u0642\u0629",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "gardendistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u062d\u062f\u064a\u0642\u0629 \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "medicalname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u0637\u0628\u064a ",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "medicaldistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u0637\u0628\u064a \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "educationalname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "educationaldistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "securityname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u0623\u0645\u0646\u064a",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "securitydistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u0623\u0645\u0646\u064a \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "govermentname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u062d\u0643\u0648\u0645\u064a",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "governamedistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0645\u0631\u0641\u0642 \u0627\u0644\u062d\u0643\u0648\u0645\u064a \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "commercialname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u062a\u062c\u0627\u0631\u064a",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "commercialdistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0633\u0648\u0642 \u0627\u0644\u062a\u062c\u0627\u0631\u064a \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "highwayname",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0637\u0631\u064a\u0642 \u0627\u0644\u0633\u0631\u064a\u0639",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "highwaydistance",
+   "fieldtype": "Int",
+   "label": "\u0645\u0633\u0627\u0641\u0629 \u0627\u0644\u0637\u0631\u064a\u0642 \u0627\u0644\u0633\u0631\u064a\u0639 \u0639\u0646 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "report_type",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u0642\u0631\u064a\u0631",
+   "options": "\u0645\u0644\u062e\u0635\n\u0645\u0641\u0635\u0644"
+  },
+  {
+   "fieldname": "value_basis",
+   "fieldtype": "Select",
+   "label": "\u0623\u0633\u0627\u0633 \u0627\u0644\u0642\u064a\u0645\u0629",
+   "options": "\n\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0633\u0648\u0642\u064a\u0629\n\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u0646\u0635\u0641\u0629\n\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0627\u0633\u062a\u062b\u0645\u0627\u0631\u064a\u0629 \u0623\u0648 \u0627\u0644\u062b\u0645\u0646\n\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u062a\u0643\u0627\u0645\u0644\u064a\u0629\n\u0642\u064a\u0645\u0629 \u0627\u0644\u062a\u0635\u0641\u064a\u0629\n\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0639\u0627\u062f\u0644\u0629\n\u0627\u0644\u0625\u064a\u062c\u0627\u0631 \u0627\u0644\u0633\u0648\u0642\u064a"
+  },
+  {
+   "fieldname": "value_hypothesis",
+   "fieldtype": "Select",
+   "label": "\u0641\u0631\u0636\u064a\u0629 \u0627\u0644\u0642\u064a\u0645\u0629",
+   "options": "\n\u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0623\u0639\u0644\u0649 \u0648\u0627\u0644\u0623\u0641\u0636\u0644\n\u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u062d\u0627\u0644\u064a\n\u0627\u0644\u062a\u0635\u0641\u064a\u0629 \u0627\u0644\u0645\u0646\u062a\u0638\u0645\u0629\n\u0627\u0644\u0628\u064a\u0639 \u0627\u0644\u0642\u0633\u0631\u064a"
+  },
+  {
+   "fieldname": "market_select",
+   "fieldtype": "Select",
+   "label": "\u0623\u0633\u0644\u0648\u0628 \u0627\u0644\u0633\u0648\u0642",
+   "options": "\n\u0645\u0642\u0627\u0631\u0646\u0627\u062a \u0627\u0644\u0623\u0631\u0627\u0636\u064a\n\u0645\u0642\u0627\u0631\u0646\u0627\u062a \u0627\u0644\u0645\u0628\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "market_amount",
+   "fieldtype": "Currency",
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0639\u0642\u0627\u0631 (\u062d\u0633\u0628 \u0627\u0644\u0633\u0648\u0642)"
+  },
+  {
+   "fieldname": "market_method",
+   "fieldtype": "Percent",
+   "label": "\u0627\u0644\u0648\u0632\u0646 \u0627\u0644\u0646\u0633\u0628\u064a"
+  },
+  {
+   "fieldname": "cost_select",
+   "fieldtype": "Select",
+   "label": "\u0627\u0633\u0644\u0648\u0628 \u0627\u0644\u062a\u0643\u0644\u0641\u0629 ",
+   "options": "\n\u0627\u0644\u0627\u062d\u0644\u0627\u0644\n\u0627\u0644\u062c\u0645\u0639"
+  },
+  {
+   "fieldname": "cost_amount",
+   "fieldtype": "Currency",
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0639\u0642\u0627\u0631 (\u062d\u0633\u0628 \u0627\u0644\u062a\u0643\u0644\u0641\u0629)"
+  },
+  {
+   "fieldname": "cost_method",
+   "fieldtype": "Percent",
+   "label": "\u0627\u0644\u0648\u0632\u0646 \u0627\u0644\u0646\u0633\u0628\u064a"
+  },
+  {
+   "fieldname": "market_cost",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0633\u0644\u0648\u0628 \u0627\u0644\u0633\u0648\u0642"
+  },
+  {
+   "fieldname": "cost_cost",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0633\u0644\u0648\u0628 \u0627\u0644\u062a\u0643\u0644\u0641\u0629"
+  },
+  {
+   "fieldname": "last_value",
+   "fieldtype": "Currency",
+   "label": "Last Value"
+  },
+  {
+   "fieldname": "the_property_is_as_if_it_was_completed",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0639\u0642\u0627\u0631 \u0643\u0645\u0627 \u0644\u0648 \u0643\u0627\u0646 \u0645\u0643\u062a\u0645\u0644\u0627\u064b"
+  },
+  {
+   "fieldname": "files",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a \u0627\u0644\u0645\u0642\u062f\u0645\u0629 \u0645\u0646 \u0637\u0627\u0644\u0628 \u0627\u0644\u062a\u0642\u064a\u064a\u0645",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "special_assumptions",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0625\u0641\u062a\u0631\u0627\u0636\u0627\u062a \u0627\u0644\u062e\u0627\u0635\u0629",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "evaluators_opinion",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0623\u064a \u0627\u0644\u0645\u0642\u064a\u0645",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "aqar_desc",
+   "fieldtype": "Small Text",
+   "label": "\u0648\u0635\u0641 \u0627\u0644\u0639\u0642\u0627\u0631",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "evaluation",
+   "fieldtype": "Link",
+   "label": "\u0645\u0642\u064a\u0645",
+   "options": "User"
+  },
+  {
+   "fieldname": "evaluation_name",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0642\u064a\u0645",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "evaluation_date",
+   "fieldtype": "Datetime",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0642\u064a\u064a\u0645"
+  },
+  {
+   "fieldname": "evaluation_pricing",
+   "fieldtype": "Currency",
+   "label": "\u062a\u0633\u0639\u064a\u0631\u0629 \u0627\u0644\u0645\u0642\u064a\u0645"
+  },
+  {
+   "fieldname": "review",
+   "fieldtype": "Link",
+   "label": "\u0645\u0631\u0627\u062c\u0639",
+   "options": "User"
+  },
+  {
+   "fieldname": "review_name",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0627\u062c\u0639",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "review_date",
+   "fieldtype": "Datetime",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629"
+  },
+  {
+   "fieldname": "sender",
+   "fieldtype": "Link",
+   "label": "\u0645\u0631\u0633\u0644",
+   "options": "User"
+  },
+  {
+   "fieldname": "sender_name",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u0633\u0644",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Datetime",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0642\u0631\u064a\u0631"
+  },
+  {
+   "fieldname": "client_pricing",
+   "fieldtype": "Currency",
+   "label": "\u062a\u0633\u0639\u064a\u0631\u0629 \u0627\u0644\u0639\u0645\u064a\u0644"
+  },
+  {
+   "fieldname": "qima_register",
+   "fieldtype": "Link",
+   "label": "\u062a\u0633\u062c\u064a\u0644 \u0642\u064a\u0645\u0629",
+   "options": "User"
+  },
+  {
+   "fieldname": "qima_name",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0633\u0645 \u0645\u0633\u062c\u0644 \u0642\u064a\u0645\u0629",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "register_date",
+   "fieldtype": "Datetime",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0633\u062c\u064a\u0644"
+  },
+  {
+   "fieldname": "qima_qr",
+   "fieldtype": "Int",
+   "label": "\u0631\u0645\u0632 \u0642\u064a\u0645\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "market_approach",
+   "fieldtype": "Check",
+   "label": "\u0623\u0633\u0644\u0648\u0628 \u0627\u0644\u0633\u0648\u0642"
+  },
+  {
+   "default": "0",
+   "fieldname": "comparisons_method",
+   "fieldtype": "Check",
+   "label": "\u0645\u0642\u0627\u0631\u0646\u0627\u062a \u0627\u0644\u0623\u0631\u0627\u0636\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "heuristic_method",
+   "fieldtype": "Check",
+   "label": "\u0645\u0642\u0627\u0631\u0646\u0627\u062a \u0627\u0644\u0645\u0628\u0627\u0646\u064a"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost_approach",
+   "fieldtype": "Check",
+   "label": "\u0623\u0633\u0644\u0648\u0628 \u0627\u0644\u062a\u0643\u0644\u0641\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "destructive_replacement_method",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0625\u062d\u0644\u0627\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "collection_method",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u062c\u0645\u0639"
+  },
+  {
+   "default": "0",
+   "fieldname": "income_method",
+   "fieldtype": "Check",
+   "label": "\u0623\u0633\u0644\u0648\u0628 \u0627\u0644\u062f\u062e\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "investment_method",
+   "fieldtype": "Check",
+   "label": "\u0631\u0633\u0645\u0644\u0629 \u0627\u0644\u062f\u062e\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "residual_value_method",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u062a\u0628\u0642\u064a\u0629"
+  },
+  {
+   "fieldname": "samples2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Samples2 Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason1",
+   "fieldtype": "Check",
+   "label": "Reason1"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason2",
+   "fieldtype": "Check",
+   "label": "Reason2"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason3",
+   "fieldtype": "Check",
+   "label": "Reason3"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason4",
+   "fieldtype": "Check",
+   "label": "Reason4"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason5",
+   "fieldtype": "Check",
+   "label": "Reason5"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason6",
+   "fieldtype": "Check",
+   "label": "Reason6"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason7",
+   "fieldtype": "Check",
+   "label": "Reason7"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason8",
+   "fieldtype": "Check",
+   "label": "Reason8"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason9",
+   "fieldtype": "Check",
+   "label": "Reason9"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason10",
+   "fieldtype": "Check",
+   "label": "Reason10"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason11",
+   "fieldtype": "Check",
+   "label": "Reason11"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason12",
+   "fieldtype": "Check",
+   "label": "Reason12"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason13",
+   "fieldtype": "Check",
+   "label": "Reason13"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason14",
+   "fieldtype": "Check",
+   "label": "Reason14"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason15",
+   "fieldtype": "Check",
+   "label": "Reason15"
+  },
+  {
+   "fieldname": "trading",
+   "fieldtype": "Small Text",
+   "label": "Trading",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "growth",
+   "fieldtype": "Select",
+   "label": "Growth",
+   "options": "\u0645\u0631\u062a\u0641\u0639\n\u062b\u0627\u0628\u062a\n\u0645\u0646\u062e\u0641\u0636"
+  },
+  {
+   "fieldname": "insulated",
+   "fieldtype": "Select",
+   "label": "Insulated",
+   "options": "\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "tiled",
+   "fieldtype": "Select",
+   "label": "Tiled",
+   "options": "\u0646\u0639\u0645\n\u0644\u0627"
+  },
+  {
+   "fieldname": "cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062a\u0643\u0644\u0641\u0629 - \u0627\u0644\u0625\u062d\u0644\u0627\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "Check"
+  },
+  {
+   "fieldname": "meterprice",
+   "fieldtype": "Currency",
+   "label": "Meterprice"
+  },
+  {
+   "fieldname": "earthtotal",
+   "fieldtype": "Currency",
+   "label": "Earthtotal"
+  },
+  {
+   "fieldname": "totalarea1",
+   "fieldtype": "Float",
+   "label": "Totalarea1"
+  },
+  {
+   "fieldname": "totalprice1",
+   "fieldtype": "Currency",
+   "label": "Totalprice1"
+  },
+  {
+   "fieldname": "buildingprice",
+   "fieldtype": "Currency",
+   "label": "Buildingprice"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Float",
+   "label": "Age"
+  },
+  {
+   "fieldname": "defaultage",
+   "fieldtype": "Float",
+   "label": "Defaultage"
+  },
+  {
+   "fieldname": "lost",
+   "fieldtype": "Percent",
+   "label": "Lost"
+  },
+  {
+   "fieldname": "lostamount",
+   "fieldtype": "Currency",
+   "label": "Lostamount"
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Percent",
+   "label": "Profit"
+  },
+  {
+   "fieldname": "profitamount",
+   "fieldtype": "Currency",
+   "label": "Profitamount"
+  },
+  {
+   "fieldname": "after_profit_amount",
+   "fieldtype": "Currency",
+   "label": "After Profit Amount"
+  },
+  {
+   "fieldname": "after_lost_amout",
+   "fieldtype": "Currency",
+   "label": "After Lost Amout"
+  },
+  {
+   "fieldname": "error",
+   "fieldtype": "Percent",
+   "label": "Error"
+  },
+  {
+   "fieldname": "lower_amount",
+   "fieldtype": "Currency",
+   "label": "Lower Amount"
+  },
+  {
+   "fieldname": "higher_amount",
+   "fieldtype": "Currency",
+   "label": "Higher Amount"
+  },
+  {
+   "fieldname": "values_tab",
+   "fieldtype": "Tab Break",
+   "label": "Values Tab"
+  },
+  {
+   "fieldname": "dicription",
+   "fieldtype": "Small Text",
+   "label": "Dicription",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "buildings_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0639\u0642\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0642\u0627\u0631\u0646\u0629 - \u0623\u0631\u0627\u0636"
+  },
+  {
+   "fieldname": "earth",
+   "fieldtype": "Float",
+   "label": "\u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u0623\u0631\u0636"
+  },
+  {
+   "fieldname": "aqartype1",
+   "fieldtype": "Small Text",
+   "label": "Aqartype1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "gada1",
+   "fieldtype": "Small Text",
+   "label": "Gada1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "type1",
+   "fieldtype": "Select",
+   "label": "Type1",
+   "options": "\u062d\u062f\n\u0633\u0648\u0645\n\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Small Text",
+   "label": "Date1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "area1",
+   "fieldtype": "Float",
+   "label": "Area1"
+  },
+  {
+   "fieldname": "meterprice1",
+   "fieldtype": "Currency",
+   "label": "Meterprice1"
+  },
+  {
+   "fieldname": "price1",
+   "fieldtype": "Currency",
+   "label": "Price1"
+  },
+  {
+   "fieldname": "distance1",
+   "fieldtype": "Small Text",
+   "label": "Distance1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "streets1",
+   "fieldtype": "Small Text",
+   "label": "Streets1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "width1",
+   "fieldtype": "Small Text",
+   "label": "Width1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "location1",
+   "fieldtype": "Small Text",
+   "label": "Location1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "aqartype2",
+   "fieldtype": "Small Text",
+   "label": "Aqartype2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "gada2",
+   "fieldtype": "Small Text",
+   "label": "Gada2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "type2",
+   "fieldtype": "Select",
+   "label": "Type2",
+   "options": "\u062d\u062f\n\u0633\u0648\u0645\n\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "date2",
+   "fieldtype": "Small Text",
+   "label": "Date2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "area2",
+   "fieldtype": "Float",
+   "label": "Area2"
+  },
+  {
+   "fieldname": "meterprice2",
+   "fieldtype": "Currency",
+   "label": "Meterprice2"
+  },
+  {
+   "fieldname": "price2",
+   "fieldtype": "Currency",
+   "label": "Price2"
+  },
+  {
+   "fieldname": "distance2",
+   "fieldtype": "Small Text",
+   "label": "Distance2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "streets2",
+   "fieldtype": "Small Text",
+   "label": "Streets2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "width2",
+   "fieldtype": "Small Text",
+   "label": "Width2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "location2",
+   "fieldtype": "Small Text",
+   "label": "Location2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "aqartype3",
+   "fieldtype": "Small Text",
+   "label": "Aqartype3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "gada3",
+   "fieldtype": "Small Text",
+   "label": "Gada3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "type3",
+   "fieldtype": "Select",
+   "label": "Type3",
+   "options": "\u062d\u062f\n\u0633\u0648\u0645\n\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "date3",
+   "fieldtype": "Small Text",
+   "label": "Date3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "area3",
+   "fieldtype": "Float",
+   "label": "Area3"
+  },
+  {
+   "fieldname": "meterprice3",
+   "fieldtype": "Currency",
+   "label": "Meterprice3"
+  },
+  {
+   "fieldname": "price3",
+   "fieldtype": "Currency",
+   "label": "Price3"
+  },
+  {
+   "fieldname": "distance3",
+   "fieldtype": "Small Text",
+   "label": "Distance3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "streets3",
+   "fieldtype": "Small Text",
+   "label": "Streets3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "width3",
+   "fieldtype": "Small Text",
+   "label": "Width3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "location3",
+   "fieldtype": "Small Text",
+   "label": "Location3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "time_factor1",
+   "fieldtype": "Int",
+   "label": "Time Factor1"
+  },
+  {
+   "fieldname": "terms1",
+   "fieldtype": "Int",
+   "label": "Terms1"
+  },
+  {
+   "fieldname": "conditions1",
+   "fieldtype": "Int",
+   "label": "Conditions1"
+  },
+  {
+   "fieldname": "total_financing1",
+   "fieldtype": "Int",
+   "label": "Total Financing1"
+  },
+  {
+   "fieldname": "selling_after1",
+   "fieldtype": "Currency",
+   "label": "Selling After1"
+  },
+  {
+   "fieldname": "space1",
+   "fieldtype": "Int",
+   "label": "Space1"
+  },
+  {
+   "fieldname": "general_site1",
+   "fieldtype": "Int",
+   "label": "General Site1"
+  },
+  {
+   "fieldname": "streets_1",
+   "fieldtype": "Int",
+   "label": "Streets 1"
+  },
+  {
+   "fieldname": "main_street1",
+   "fieldtype": "Int",
+   "label": "Main Street1"
+  },
+  {
+   "fieldname": "land_level1",
+   "fieldtype": "Int",
+   "label": "Land Level1"
+  },
+  {
+   "fieldname": "nature_of_use1",
+   "fieldtype": "Int",
+   "label": "Nature Of Use1"
+  },
+  {
+   "fieldname": "roles_allowed1",
+   "fieldtype": "Int",
+   "label": "Roles Allowed1"
+  },
+  {
+   "fieldname": "others1",
+   "fieldtype": "Int",
+   "label": "Others1"
+  },
+  {
+   "fieldname": "other_adjustments1",
+   "fieldtype": "Int",
+   "label": "Other Adjustments1"
+  },
+  {
+   "fieldname": "selling_price1",
+   "fieldtype": "Currency",
+   "label": "Selling Price1"
+  },
+  {
+   "fieldname": "time_factor2",
+   "fieldtype": "Int",
+   "label": "Time Factor2"
+  },
+  {
+   "fieldname": "terms2",
+   "fieldtype": "Int",
+   "label": "Terms2"
+  },
+  {
+   "fieldname": "conditions2",
+   "fieldtype": "Int",
+   "label": "Conditions2"
+  },
+  {
+   "fieldname": "total_financing2",
+   "fieldtype": "Int",
+   "label": "Total Financing2"
+  },
+  {
+   "fieldname": "selling_after2",
+   "fieldtype": "Currency",
+   "label": "Selling After2"
+  },
+  {
+   "fieldname": "space2",
+   "fieldtype": "Int",
+   "label": "Space2"
+  },
+  {
+   "fieldname": "general_site2",
+   "fieldtype": "Int",
+   "label": "General Site2"
+  },
+  {
+   "fieldname": "streets_2",
+   "fieldtype": "Int",
+   "label": "Streets 2"
+  },
+  {
+   "fieldname": "main_street2",
+   "fieldtype": "Int",
+   "label": "Main Street2"
+  },
+  {
+   "fieldname": "land_level2",
+   "fieldtype": "Int",
+   "label": "Land Level2"
+  },
+  {
+   "fieldname": "nature_of_use2",
+   "fieldtype": "Int",
+   "label": "Nature Of Use2"
+  },
+  {
+   "fieldname": "roles_allowed2",
+   "fieldtype": "Int",
+   "label": "Roles Allowed2"
+  },
+  {
+   "fieldname": "others2",
+   "fieldtype": "Int",
+   "label": "Others2"
+  },
+  {
+   "fieldname": "other_adjustments2",
+   "fieldtype": "Int",
+   "label": "Other Adjustments2"
+  },
+  {
+   "fieldname": "selling_price2",
+   "fieldtype": "Currency",
+   "label": "Selling Price2"
+  },
+  {
+   "fieldname": "time_factor3",
+   "fieldtype": "Int",
+   "label": "Time Factor3"
+  },
+  {
+   "fieldname": "terms3",
+   "fieldtype": "Int",
+   "label": "Terms3"
+  },
+  {
+   "fieldname": "conditions3",
+   "fieldtype": "Int",
+   "label": "Conditions3"
+  },
+  {
+   "fieldname": "total_financing3",
+   "fieldtype": "Int",
+   "label": "Total Financing3"
+  },
+  {
+   "fieldname": "selling_after3",
+   "fieldtype": "Currency",
+   "label": "Selling After3"
+  },
+  {
+   "fieldname": "space3",
+   "fieldtype": "Int",
+   "label": "Space3"
+  },
+  {
+   "fieldname": "general_site3",
+   "fieldtype": "Int",
+   "label": "General Site3"
+  },
+  {
+   "fieldname": "streets_3",
+   "fieldtype": "Int",
+   "label": "Streets 3"
+  },
+  {
+   "fieldname": "main_street3",
+   "fieldtype": "Int",
+   "label": "Main Street3"
+  },
+  {
+   "fieldname": "land_level3",
+   "fieldtype": "Int",
+   "label": "Land Level3"
+  },
+  {
+   "fieldname": "nature_of_use3",
+   "fieldtype": "Int",
+   "label": "Nature Of Use3"
+  },
+  {
+   "fieldname": "roles_allowed3",
+   "fieldtype": "Int",
+   "label": "Roles Allowed3"
+  },
+  {
+   "fieldname": "others3",
+   "fieldtype": "Int",
+   "label": "Others3"
+  },
+  {
+   "fieldname": "other_adjustments3",
+   "fieldtype": "Int",
+   "label": "Other Adjustments3"
+  },
+  {
+   "fieldname": "selling_price3",
+   "fieldtype": "Currency",
+   "label": "Selling Price3"
+  },
+  {
+   "fieldname": "weight1",
+   "fieldtype": "Int",
+   "label": "Weight1"
+  },
+  {
+   "fieldname": "contribution1",
+   "fieldtype": "Currency",
+   "label": "Contribution1"
+  },
+  {
+   "fieldname": "weight2",
+   "fieldtype": "Int",
+   "label": "Weight2"
+  },
+  {
+   "fieldname": "contribution2",
+   "fieldtype": "Currency",
+   "label": "Contribution2"
+  },
+  {
+   "fieldname": "weight3",
+   "fieldtype": "Int",
+   "label": "Weight3"
+  },
+  {
+   "fieldname": "contribution3",
+   "fieldtype": "Currency",
+   "label": "Contribution3"
+  },
+  {
+   "fieldname": "meter_price",
+   "fieldtype": "Currency",
+   "label": "Meter Price"
+  },
+  {
+   "fieldname": "market_value",
+   "fieldtype": "Currency",
+   "label": "Market Value"
+  },
+  {
+   "fieldname": "residual_tab",
+   "fieldtype": "Tab Break",
+   "label": "Residual Tab"
+  },
+  {
+   "fieldname": "eartharea",
+   "fieldtype": "Float",
+   "label": "Eartharea"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Percent",
+   "label": "Major"
+  },
+  {
+   "fieldname": "secondary",
+   "fieldtype": "Percent",
+   "label": "Secondary"
+  },
+  {
+   "fieldname": "residential",
+   "fieldtype": "Percent",
+   "label": "Residential"
+  },
+  {
+   "fieldname": "industrial",
+   "fieldtype": "Percent",
+   "label": "Industrial"
+  },
+  {
+   "fieldname": "gardens",
+   "fieldtype": "Percent",
+   "label": "Gardens"
+  },
+  {
+   "fieldname": "educational",
+   "fieldtype": "Percent",
+   "label": "Educational"
+  },
+  {
+   "fieldname": "public_services",
+   "fieldtype": "Percent",
+   "label": "Public Services"
+  },
+  {
+   "fieldname": "total_ratio",
+   "fieldtype": "Percent",
+   "label": "Total Ratio"
+  },
+  {
+   "fieldname": "gdv",
+   "fieldtype": "Currency",
+   "label": "Gdv"
+  },
+  {
+   "fieldname": "major_space",
+   "fieldtype": "Float",
+   "label": "Major Space"
+  },
+  {
+   "fieldname": "secondary_space",
+   "fieldtype": "Float",
+   "label": "Secondary Space"
+  },
+  {
+   "fieldname": "residential_space",
+   "fieldtype": "Float",
+   "label": "Residential Space"
+  },
+  {
+   "fieldname": "industrial_space",
+   "fieldtype": "Float",
+   "label": "Industrial Space"
+  },
+  {
+   "fieldname": "gardens_space",
+   "fieldtype": "Float",
+   "label": "Gardens Space"
+  },
+  {
+   "fieldname": "educational_space",
+   "fieldtype": "Float",
+   "label": "Educational Space"
+  },
+  {
+   "fieldname": "public_services_space",
+   "fieldtype": "Float",
+   "label": "Public Services Space"
+  },
+  {
+   "fieldname": "major_price",
+   "fieldtype": "Currency",
+   "label": "Major Price"
+  },
+  {
+   "fieldname": "secondary_price",
+   "fieldtype": "Currency",
+   "label": "Secondary Price"
+  },
+  {
+   "fieldname": "residential_price",
+   "fieldtype": "Currency",
+   "label": "Residential Price"
+  },
+  {
+   "fieldname": "industrial_price",
+   "fieldtype": "Currency",
+   "label": "Industrial Price"
+  },
+  {
+   "fieldname": "gardens_price",
+   "fieldtype": "Currency",
+   "label": "Gardens Price"
+  },
+  {
+   "fieldname": "educational_price",
+   "fieldtype": "Currency",
+   "label": "Educational Price"
+  },
+  {
+   "fieldname": "public_services_price",
+   "fieldtype": "Currency",
+   "label": "Public Services Price"
+  },
+  {
+   "fieldname": "major_total",
+   "fieldtype": "Currency",
+   "label": "Major Total"
+  },
+  {
+   "fieldname": "secondary_total",
+   "fieldtype": "Currency",
+   "label": "Secondary Total"
+  },
+  {
+   "fieldname": "residential_total",
+   "fieldtype": "Currency",
+   "label": "Residential Total"
+  },
+  {
+   "fieldname": "industrial_total",
+   "fieldtype": "Currency",
+   "label": "Industrial Total"
+  },
+  {
+   "fieldname": "gardens_total",
+   "fieldtype": "Currency",
+   "label": "Gardens Total"
+  },
+  {
+   "fieldname": "educational_total",
+   "fieldtype": "Currency",
+   "label": "Educational Total"
+  },
+  {
+   "fieldname": "public_services_total",
+   "fieldtype": "Currency",
+   "label": "Public Services Total"
+  },
+  {
+   "fieldname": "average_cost",
+   "fieldtype": "Currency",
+   "label": "Average Cost"
+  },
+  {
+   "fieldname": "financing",
+   "fieldtype": "Percent",
+   "label": "Financing"
+  },
+  {
+   "fieldname": "legal",
+   "fieldtype": "Percent",
+   "label": "Legal"
+  },
+  {
+   "fieldname": "marketing",
+   "fieldtype": "Percent",
+   "label": "Marketing"
+  },
+  {
+   "fieldname": "incidental_costs",
+   "fieldtype": "Percent",
+   "label": "Incidental Costs"
+  },
+  {
+   "fieldname": "risks",
+   "fieldtype": "Percent",
+   "label": "Risks"
+  },
+  {
+   "fieldname": "dc",
+   "fieldtype": "Currency",
+   "label": "Dc"
+  },
+  {
+   "fieldname": "average_cost_total",
+   "fieldtype": "Currency",
+   "label": "Average Cost Total"
+  },
+  {
+   "fieldname": "financing_total",
+   "fieldtype": "Currency",
+   "label": "Financing Total"
+  },
+  {
+   "fieldname": "legal_total",
+   "fieldtype": "Currency",
+   "label": "Legal Total"
+  },
+  {
+   "fieldname": "marketing_total",
+   "fieldtype": "Currency",
+   "label": "Marketing Total"
+  },
+  {
+   "fieldname": "incidental_costs_total",
+   "fieldtype": "Currency",
+   "label": "Incidental Costs Total"
+  },
+  {
+   "fieldname": "risks_total",
+   "fieldtype": "Currency",
+   "label": "Risks Total"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "profit_margin",
+   "fieldtype": "Percent",
+   "label": "Profit Margin"
+  },
+  {
+   "fieldname": "gross_profit",
+   "fieldtype": "Currency",
+   "label": "Gross Profit"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Currency",
+   "label": "Won"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Currency",
+   "label": "Value"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "factor",
+   "fieldtype": "Float",
+   "label": "Factor"
+  },
+  {
+   "fieldname": "current",
+   "fieldtype": "Currency",
+   "label": "Current"
+  },
+  {
+   "fieldname": "current_price",
+   "fieldtype": "Currency",
+   "label": "Current Price"
+  },
+  {
+   "fieldname": "capitalization_tab",
+   "fieldtype": "Tab Break",
+   "label": "Capitalization Tab"
+  },
+  {
+   "fieldname": "apartments",
+   "fieldtype": "Int",
+   "label": "Apartments"
+  },
+  {
+   "fieldname": "shops",
+   "fieldtype": "Int",
+   "label": "Shops"
+  },
+  {
+   "fieldname": "offices",
+   "fieldtype": "Int",
+   "label": "Offices"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Int",
+   "label": "Other"
+  },
+  {
+   "fieldname": "apartments_rent",
+   "fieldtype": "Currency",
+   "label": "Apartments Rent"
+  },
+  {
+   "fieldname": "shops_rent",
+   "fieldtype": "Currency",
+   "label": "Shops Rent"
+  },
+  {
+   "fieldname": "offices_rent",
+   "fieldtype": "Currency",
+   "label": "Offices Rent"
+  },
+  {
+   "fieldname": "other_rent",
+   "fieldtype": "Currency",
+   "label": "Other Rent"
+  },
+  {
+   "fieldname": "rent_total",
+   "fieldtype": "Currency",
+   "label": "Rent Total"
+  },
+  {
+   "fieldname": "rent_percent",
+   "fieldtype": "Percent",
+   "label": "Rent Percent"
+  },
+  {
+   "fieldname": "rent_value",
+   "fieldtype": "Currency",
+   "label": "Rent Value"
+  },
+  {
+   "fieldname": "rented1",
+   "fieldtype": "Small Text",
+   "label": "Rented1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "rented2",
+   "fieldtype": "Small Text",
+   "label": "Rented2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "rented3",
+   "fieldtype": "Small Text",
+   "label": "Rented3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "own1",
+   "fieldtype": "Small Text",
+   "label": "Own1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "own2",
+   "fieldtype": "Small Text",
+   "label": "Own2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "own3",
+   "fieldtype": "Small Text",
+   "label": "Own3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "cont1",
+   "fieldtype": "Small Text",
+   "label": "Cont1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "cont2",
+   "fieldtype": "Small Text",
+   "label": "Cont2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "cont3",
+   "fieldtype": "Small Text",
+   "label": "Cont3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "tasnif1",
+   "fieldtype": "Small Text",
+   "label": "Tasnif1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "tasnif2",
+   "fieldtype": "Small Text",
+   "label": "Tasnif2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "tasnif3",
+   "fieldtype": "Small Text",
+   "label": "Tasnif3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "gross_income",
+   "fieldtype": "Currency",
+   "label": "Gross Income"
+  },
+  {
+   "fieldname": "vacancyrate",
+   "fieldtype": "Percent",
+   "label": "Vacancyrate"
+  },
+  {
+   "fieldname": "value_of_vacancies1",
+   "fieldtype": "Currency",
+   "label": "Value Of Vacancies1"
+  },
+  {
+   "fieldname": "totaleffectiveincome",
+   "fieldtype": "Currency",
+   "label": "Totaleffectiveincome"
+  },
+  {
+   "fieldname": "operatingexpenseratio",
+   "fieldtype": "Percent",
+   "label": "Operatingexpenseratio"
+  },
+  {
+   "fieldname": "operationandmaintenance_expenses",
+   "fieldtype": "Currency",
+   "label": "Operationandmaintenance Expenses"
+  },
+  {
+   "fieldname": "income11",
+   "fieldtype": "Currency",
+   "label": "Income11"
+  },
+  {
+   "fieldname": "capitalization_rate11",
+   "fieldtype": "Percent",
+   "label": "Capitalization Rate11"
+  },
+  {
+   "fieldname": "property_value11",
+   "fieldtype": "Currency",
+   "label": "Property Value11"
+  },
+  {
+   "fieldname": "property_value1111",
+   "fieldtype": "Currency",
+   "label": "Property Value1111"
+  },
+  {
+   "fieldname": "lands_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0639\u0642\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0642\u0627\u0631\u0646\u0629 - \u0645\u0628\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "lands_aqartype1",
+   "fieldtype": "Small Text",
+   "label": "Lands Aqartype1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_gada1",
+   "fieldtype": "Small Text",
+   "label": "Lands Gada1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_type1",
+   "fieldtype": "Select",
+   "label": "Lands Type1",
+   "options": "\u062d\u062f\n\u0633\u0648\u0645\n\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "lands_date1",
+   "fieldtype": "Small Text",
+   "label": "Lands Date1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_area1",
+   "fieldtype": "Float",
+   "label": "Lands Area1"
+  },
+  {
+   "fieldname": "lands_meterprice1",
+   "fieldtype": "Currency",
+   "label": "Lands Meterprice1"
+  },
+  {
+   "fieldname": "lands_price1",
+   "fieldtype": "Currency",
+   "label": "Lands Price1"
+  },
+  {
+   "fieldname": "lands_distance1",
+   "fieldtype": "Small Text",
+   "label": "Lands Distance1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_streets1",
+   "fieldtype": "Small Text",
+   "label": "Lands Streets1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_width1",
+   "fieldtype": "Small Text",
+   "label": "Lands Width1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_location1",
+   "fieldtype": "Small Text",
+   "label": "Lands Location1",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_aqartype2",
+   "fieldtype": "Small Text",
+   "label": "Lands Aqartype2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_gada2",
+   "fieldtype": "Small Text",
+   "label": "Lands Gada2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_type2",
+   "fieldtype": "Select",
+   "label": "Lands Type2",
+   "options": "\u062d\u062f\n\u0633\u0648\u0645\n\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "lands_date2",
+   "fieldtype": "Small Text",
+   "label": "Lands Date2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_area2",
+   "fieldtype": "Float",
+   "label": "Lands Area2"
+  },
+  {
+   "fieldname": "lands_meterprice2",
+   "fieldtype": "Currency",
+   "label": "Lands Meterprice2"
+  },
+  {
+   "fieldname": "lands_price2",
+   "fieldtype": "Currency",
+   "label": "Lands Price2"
+  },
+  {
+   "fieldname": "lands_distance2",
+   "fieldtype": "Small Text",
+   "label": "Lands Distance2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_streets2",
+   "fieldtype": "Small Text",
+   "label": "Lands Streets2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_width2",
+   "fieldtype": "Small Text",
+   "label": "Lands Width2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_location2",
+   "fieldtype": "Small Text",
+   "label": "Lands Location2",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_aqartype3",
+   "fieldtype": "Small Text",
+   "label": "Lands Aqartype3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_gada3",
+   "fieldtype": "Small Text",
+   "label": "Lands Gada3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_type3",
+   "fieldtype": "Select",
+   "label": "Lands Type3",
+   "options": "\u062d\u062f\n\u0633\u0648\u0645\n\u062a\u0646\u0641\u064a\u0630"
+  },
+  {
+   "fieldname": "lands_date3",
+   "fieldtype": "Small Text",
+   "label": "Lands Date3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_area3",
+   "fieldtype": "Float",
+   "label": "Lands Area3"
+  },
+  {
+   "fieldname": "lands_meterprice3",
+   "fieldtype": "Currency",
+   "label": "Lands Meterprice3"
+  },
+  {
+   "fieldname": "lands_price3",
+   "fieldtype": "Currency",
+   "label": "Lands Price3"
+  },
+  {
+   "fieldname": "lands_distance3",
+   "fieldtype": "Small Text",
+   "label": "Lands Distance3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_streets3",
+   "fieldtype": "Small Text",
+   "label": "Lands Streets3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_width3",
+   "fieldtype": "Small Text",
+   "label": "Lands Width3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_location3",
+   "fieldtype": "Small Text",
+   "label": "Lands Location3",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "lands_time_factor1",
+   "fieldtype": "Int",
+   "label": "Lands Time Factor1"
+  },
+  {
+   "fieldname": "lands_terms1",
+   "fieldtype": "Int",
+   "label": "Lands Terms1"
+  },
+  {
+   "fieldname": "lands_conditions1",
+   "fieldtype": "Int",
+   "label": "Lands Conditions1"
+  },
+  {
+   "fieldname": "lands_total_financing1",
+   "fieldtype": "Int",
+   "label": "Lands Total Financing1"
+  },
+  {
+   "fieldname": "lands_selling_after1",
+   "fieldtype": "Currency",
+   "label": "Lands Selling After1"
+  },
+  {
+   "fieldname": "lands_space1",
+   "fieldtype": "Int",
+   "label": "Lands Space1"
+  },
+  {
+   "fieldname": "lands_general_site1",
+   "fieldtype": "Int",
+   "label": "Lands General Site1"
+  },
+  {
+   "fieldname": "lands_streets_1",
+   "fieldtype": "Int",
+   "label": "Lands Streets 1"
+  },
+  {
+   "fieldname": "lands_main_street1",
+   "fieldtype": "Int",
+   "label": "Lands Main Street1"
+  },
+  {
+   "fieldname": "lands_land_level1",
+   "fieldtype": "Int",
+   "label": "Lands Land Level1"
+  },
+  {
+   "fieldname": "lands_nature_of_use1",
+   "fieldtype": "Int",
+   "label": "Lands Nature Of Use1"
+  },
+  {
+   "fieldname": "lands_roles_allowed1",
+   "fieldtype": "Int",
+   "label": "Lands Roles Allowed1"
+  },
+  {
+   "fieldname": "lands_others1",
+   "fieldtype": "Int",
+   "label": "Lands Others1"
+  },
+  {
+   "fieldname": "lands_other_adjustments1",
+   "fieldtype": "Int",
+   "label": "Lands Other Adjustments1"
+  },
+  {
+   "fieldname": "lands_selling_price1",
+   "fieldtype": "Currency",
+   "label": "Lands Selling Price1"
+  },
+  {
+   "fieldname": "lands_time_factor2",
+   "fieldtype": "Int",
+   "label": "Lands Time Factor2"
+  },
+  {
+   "fieldname": "lands_terms2",
+   "fieldtype": "Int",
+   "label": "Lands Terms2"
+  },
+  {
+   "fieldname": "lands_conditions2",
+   "fieldtype": "Int",
+   "label": "Lands Conditions2"
+  },
+  {
+   "fieldname": "lands_total_financing2",
+   "fieldtype": "Int",
+   "label": "Lands Total Financing2"
+  },
+  {
+   "fieldname": "lands_selling_after2",
+   "fieldtype": "Currency",
+   "label": "Lands Selling After2"
+  },
+  {
+   "fieldname": "lands_space2",
+   "fieldtype": "Int",
+   "label": "Lands Space2"
+  },
+  {
+   "fieldname": "lands_general_site2",
+   "fieldtype": "Int",
+   "label": "Lands General Site2"
+  },
+  {
+   "fieldname": "lands_streets_2",
+   "fieldtype": "Int",
+   "label": "Lands Streets 2"
+  },
+  {
+   "fieldname": "lands_main_street2",
+   "fieldtype": "Int",
+   "label": "Lands Main Street2"
+  },
+  {
+   "fieldname": "lands_land_level2",
+   "fieldtype": "Int",
+   "label": "Lands Land Level2"
+  },
+  {
+   "fieldname": "lands_nature_of_use2",
+   "fieldtype": "Int",
+   "label": "Lands Nature Of Use2"
+  },
+  {
+   "fieldname": "lands_roles_allowed2",
+   "fieldtype": "Int",
+   "label": "Lands Roles Allowed2"
+  },
+  {
+   "fieldname": "lands_others2",
+   "fieldtype": "Int",
+   "label": "Lands Others2"
+  },
+  {
+   "fieldname": "lands_other_adjustments2",
+   "fieldtype": "Int",
+   "label": "Lands Other Adjustments2"
+  },
+  {
+   "fieldname": "lands_selling_price2",
+   "fieldtype": "Currency",
+   "label": "Lands Selling Price2"
+  },
+  {
+   "fieldname": "lands_time_factor3",
+   "fieldtype": "Int",
+   "label": "Lands Time Factor3"
+  },
+  {
+   "fieldname": "lands_terms3",
+   "fieldtype": "Int",
+   "label": "Lands Terms3"
+  },
+  {
+   "fieldname": "lands_conditions3",
+   "fieldtype": "Int",
+   "label": "Lands Conditions3"
+  },
+  {
+   "fieldname": "lands_total_financing3",
+   "fieldtype": "Int",
+   "label": "Lands Total Financing3"
+  },
+  {
+   "fieldname": "lands_selling_after3",
+   "fieldtype": "Currency",
+   "label": "Lands Selling After3"
+  },
+  {
+   "fieldname": "lands_space3",
+   "fieldtype": "Int",
+   "label": "Lands Space3"
+  },
+  {
+   "fieldname": "lands_general_site3",
+   "fieldtype": "Int",
+   "label": "Lands General Site3"
+  },
+  {
+   "fieldname": "lands_streets_3",
+   "fieldtype": "Int",
+   "label": "Lands Streets 3"
+  },
+  {
+   "fieldname": "lands_main_street3",
+   "fieldtype": "Int",
+   "label": "Lands Main Street3"
+  },
+  {
+   "fieldname": "lands_land_level3",
+   "fieldtype": "Int",
+   "label": "Lands Land Level3"
+  },
+  {
+   "fieldname": "lands_nature_of_use3",
+   "fieldtype": "Int",
+   "label": "Lands Nature Of Use3"
+  },
+  {
+   "fieldname": "lands_roles_allowed3",
+   "fieldtype": "Int",
+   "label": "Lands Roles Allowed3"
+  },
+  {
+   "fieldname": "lands_others3",
+   "fieldtype": "Int",
+   "label": "Lands Others3"
+  },
+  {
+   "fieldname": "lands_other_adjustments3",
+   "fieldtype": "Int",
+   "label": "Lands Other Adjustments3"
+  },
+  {
+   "fieldname": "lands_selling_price3",
+   "fieldtype": "Currency",
+   "label": "Lands Selling Price3"
+  },
+  {
+   "fieldname": "lands_weight1",
+   "fieldtype": "Int",
+   "label": "Lands Weight1"
+  },
+  {
+   "fieldname": "lands_contribution1",
+   "fieldtype": "Currency",
+   "label": "Lands Contribution1"
+  },
+  {
+   "fieldname": "lands_weight2",
+   "fieldtype": "Int",
+   "label": "Lands Weight2"
+  },
+  {
+   "fieldname": "lands_contribution2",
+   "fieldtype": "Currency",
+   "label": "Lands Contribution2"
+  },
+  {
+   "fieldname": "lands_weight3",
+   "fieldtype": "Int",
+   "label": "Lands Weight3"
+  },
+  {
+   "fieldname": "lands_contribution3",
+   "fieldtype": "Currency",
+   "label": "Lands Contribution3"
+  },
+  {
+   "fieldname": "lands_meter_price",
+   "fieldtype": "Currency",
+   "label": "Lands Meter Price"
+  },
+  {
+   "fieldname": "lands_market_value",
+   "fieldtype": "Currency",
+   "label": "Lands Market Value"
+  },
+  {
+   "fieldname": "buildingpermitnote",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u062e\u0627\u0635\u0629 \u0628\u0627\u0644\u0631\u062e\u0635\u0629",
+   "max_height": "28px"
+  },
+  {
+   "fieldname": "income_select",
+   "fieldtype": "Select",
+   "label": "\u0623\u0633\u0644\u0648\u0628 \u0627\u0644\u062f\u062e\u0644",
+   "options": "\n\u0631\u0633\u0645\u0644\u0629 \u0627\u0644\u062f\u062e\u0644\n\u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u062a\u0628\u0642\u064a\u0629"
+  },
+  {
+   "fieldname": "income_amount",
+   "fieldtype": "Currency",
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0639\u0642\u0627\u0631 (\u0631\u0633\u0645\u0644\u0629 \u0627\u0644\u062f\u062e\u0644)"
+  },
+  {
+   "fieldname": "income_method1",
+   "fieldtype": "Percent",
+   "label": "\u0627\u0644\u0648\u0632\u0646 \u0627\u0644\u0646\u0633\u0628\u064a"
+  },
+  {
+   "fieldname": "income_cost",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0633\u0644\u0648\u0628 \u0627\u0644\u062f\u062e\u0644"
+  },
+  {
+   "fieldname": "section_break_rrjb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "leveling",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u062a\u0633\u0648\u064a\u0629",
+   "length": 30,
+   "options": "\n\u0628\u0627\u0644\u0645\u062a\u0631\n\u0628\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BaseSample",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "vaultaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0642\u0628\u0648"
+  },
+  {
+   "fieldname": "vaultmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "vaulttotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "groundflooraera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u062f\u0648\u0631 \u0627\u0644\u0623\u0631\u0636\u064a "
+  },
+  {
+   "fieldname": "groundfloormeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "groundfloortotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "firstroundaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u062f\u0648\u0631 \u0627\u0644\u0623\u0648\u0644"
+  },
+  {
+   "fieldname": "firstroundmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "firstroundtotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "secondroundaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u062f\u0648\u0631 \u0627\u0644\u062b\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "secondroundmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "secondroundtotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "recurringroundaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u062f\u0648\u0631 \u0627\u0644\u0645\u062a\u0643\u0631\u0631"
+  },
+  {
+   "fieldname": "recurringroundmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "recurringroundtotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "annexearthaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0645\u0644\u062d\u0642 \u0627\u0644\u0623\u0631\u0636\u064a"
+  },
+  {
+   "fieldname": "annexearthmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "annexearthtotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "topannexroundaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0645\u0644\u062d\u0642 \u0627\u0644\u0639\u0644\u0648\u064a"
+  },
+  {
+   "fieldname": "topannexmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "topannextotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "mizanaera",
+   "fieldtype": "Float",
+   "label": "\u0645\u064a\u0632\u0627\u0646\u064a\u0646"
+  },
+  {
+   "fieldname": "mizanmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "mizantotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "appartmentarea",
+   "fieldtype": "Float",
+   "label": "\u0634\u0642\u0629"
+  },
+  {
+   "fieldname": "appartmentmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "appartmenttotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "othersaera",
+   "fieldtype": "Float",
+   "label": "\u0623\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "othersmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "otherstotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "speciaarea",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u062c\u0632\u0621 \u0627\u0644\u062e\u0627\u0635"
+  },
+  {
+   "fieldname": "speciameterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "speciatotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "fencesaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0623\u0633\u0648\u0627\u0631"
+  },
+  {
+   "fieldname": "fencesmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "fencestotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "gardenaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u062d\u062f\u064a\u0642\u0629"
+  },
+  {
+   "fieldname": "gardenmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "gardentotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "swimpoolaera",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0645\u0633\u0628\u062d"
+  },
+  {
+   "fieldname": "swimmeterprice",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "swimtotal",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062c\u0645\u0648\u0639"
+  },
+  {
+   "fieldname": "collection",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062c\u0645\u0639"
+  },
+  {
+   "fieldname": "eartharea1",
+   "fieldtype": "Float",
+   "label": "\u0645\u0633\u0627\u062d\u0629 \u0627\u0644\u0623\u0631\u0636"
+  },
+  {
+   "fieldname": "meterprice11",
+   "fieldtype": "Currency",
+   "label": " \u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "earthtotal1",
+   "fieldtype": "Currency",
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0623\u0631\u0636"
+  },
+  {
+   "fieldname": "totalprice11",
+   "fieldtype": "Currency",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0642\u064a\u0645\u0629 \u062a\u0643\u0644\u0641\u0629 \u0627\u0644\u0645\u0628\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "buildingprice1",
+   "fieldtype": "Currency",
+   "label": "\u062a\u0643\u0644\u0641\u0629 \u0627\u0644\u0639\u0642\u0627\u0631"
+  },
+  {
+   "fieldname": "building_flats1",
+   "fieldtype": "Float",
+   "label": "\u0645\u0633\u0637\u062d\u0627\u062a \u0627\u0644\u0645\u0628\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "building_flats_meter1",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0645\u062a\u0631"
+  },
+  {
+   "fieldname": "building_flats_amount1",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a"
+  },
+  {
+   "fieldname": "age1",
+   "fieldtype": "Float",
+   "label": "\u0639\u0645\u0631 \u0627\u0644\u0639\u0642\u0627\u0631 \u0627\u0644\u062d\u0627\u0644\u064a"
+  },
+  {
+   "fieldname": "defaultage1",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0639\u0645\u0631 \u0627\u0644\u0627\u0641\u062a\u0631\u0627\u0636\u064a \u0644\u0644\u0639\u0642\u0627\u0631 (\u0627\u0644\u0627\u0642\u062a\u0635\u0627\u062f\u064a)"
+  },
+  {
+   "fieldname": "profit1",
+   "fieldtype": "Float",
+   "label": "\u0647\u0627\u0645\u0634 \u0627\u0644\u0631\u0628\u062d"
+  },
+  {
+   "fieldname": "profitamount1",
+   "fieldtype": "Currency",
+   "label": "\u0642\u064a\u0645\u0629 \u0647\u0627\u0645\u0634 \u0627\u0644\u0631\u0628\u062d"
+  },
+  {
+   "fieldname": "after_profit_amount1",
+   "fieldtype": "Currency",
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u0628\u0627\u0646\u064a"
+  },
+  {
+   "fieldname": "lost1",
+   "fieldtype": "Float",
+   "label": "\u0646\u0633\u0628\u0629 \u0627\u0644\u0627\u0647\u0644\u0627\u0643"
+  },
+  {
+   "fieldname": "lostamount1",
+   "fieldtype": "Currency",
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0625\u0647\u0644\u0627\u0643"
+  },
+  {
+   "fieldname": "after_lost_amout1",
+   "fieldtype": "Currency",
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u0628\u0627\u0646\u064a \u0628\u0639\u062f \u0627\u0644\u0627\u0647\u0644\u0627\u0643"
+  },
+  {
+   "fieldname": "error1",
+   "fieldtype": "Percent",
+   "label": "\u0646\u0633\u0628\u0629 \u0647\u0627\u0645\u0634 \u0627\u0644\u062e\u0637\u0623"
+  },
+  {
+   "fieldname": "lower_amount1",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u062d\u062f \u0627\u0644\u0623\u062f\u0646\u0649"
+  },
+  {
+   "fieldname": "higher_amount1",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u062d\u062f \u0627\u0644\u0623\u0639\u0644\u0649"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "\u062f\u0627\u0626\u0631\u0629 \u0627\u0644\u0639\u0631\u0636"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "\u062e\u0637 \u0627\u0644\u0637\u0648\u0644"
+  },
+  {
+   "fieldname": "aqartype",
+   "fieldtype": "Link",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0639\u0642\u0627\u0631",
+   "options": "aqartype"
+  },
+  {
+   "fieldname": "commentsreson",
+   "fieldtype": "Small Text",
+   "label": "\u0633\u0628\u0628 \u0627\u0644\u062a\u0639\u0644\u064a\u0642",
+   "max_height": "28px"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-24 15:02:49.264171",
+ "modified_by": "Administrator",
+ "module": "Appraisal",
+ "name": "BaseSample",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
