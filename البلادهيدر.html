@@ -1,0 +1,50 @@
+<div id="header-html">
+    <div class="row">
+
+        <div class="col-xs-2">
+            {% set customer_name = doc.customer %}
+            <img
+                src='http://192.168.1.174/{{ frappe.db.get_value("Customer", filters={"name":   customer_name},fieldname="image" ) }}'>
+        </div>
+        <div class="col-xs-8">
+            <div class="row">
+                <div class="col-xs-6" style="font-size:14px; font-weight:bold;">تقرير تقييم عقاري</div>
+                <div class="col-xs-6">تاريخ التقييم: {{ frappe.format(doc.report_date, {'fieldtype': 'Date'}) }}</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">رقم الطلب: {{ doc.name }}</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">شهادة تقييم عقار سكني</div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-2">
+            <img style="float:left;" src="/files/small.JPG">
+
+        </div>
+    </div>
+
+    <table style="width: 100%; margin-top:2px;">
+        <tbody>
+            <tr style="background-color: #229c98; font-weight: bold ;">
+                <td colspan="1" style="color:#fff;">هوية المقيم المعتمد</td>
+
+                <td colspan="1" style="color:#fff;">خالد عبد الكريم الجاسر</td>
+
+
+                <td colspan="1" style="color:#fff;">رقم الترخيص</td>
+                <td colspan="1" style="color:#fff;">1210000040</td>
+
+
+                <td colspan="1" style="color:#fff;">تاريخ الترخيص</td>
+                <td colspan="1" style="color:#fff;">01/03/1437 هـ</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>

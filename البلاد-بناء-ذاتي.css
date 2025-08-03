@@ -1,0 +1,37 @@
+.print-format {
+    font-size: 8px;
+    font-family: Helvetica !important;
+}
+
+input[type="checkbox"] {
+    margin: 0 !important;
+
+}
+
+.print-format th {
+    background-color: #1B8E8A !important;
+    color: #ffffff;
+    text-align: center !important;
+    padding: 3px !important;
+    font-size: 12px;
+
+}
+
+.print-format td {
+    padding: 3px !important;
+    border: 1px solid #eee;
+    font-size: 8px;
+}
+
+.subtitle {
+    background-color: #eee;
+    color: #000000;
+    border: 1px solid #bebebe;
+}
+
+.titles {
+    text-align: center;
+    background-color: #229c98 !important;
+    color: #ffffff !important;
+    border: 1px solid #bebebe !important;
+}
