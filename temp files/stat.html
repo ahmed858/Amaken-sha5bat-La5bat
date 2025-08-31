@@ -1,0 +1,72 @@
+<div id="head-section">
+    <div style="display: flex; align-items: center; gap: 20px; font-family: Arial, sans-serif; padding: 10px;">
+        <div id="full_name" class="info-box">الاسم الكامل</div>
+        <div id="email" class="info-box">البريد الإلكتروني</div>
+    </div>
+
+    <div style="padding: 10px;">
+        <button class="btn btn-primary" onclick="frappe.new_doc('BaseSample')">
+            ➕معاملة جديدة
+        </button>
+
+        <button id="pull-sample-btn" class="btn btn-primary">
+            ⬇️سحب معاملة
+        </button>
+
+        <button id="open-search-btn" class="btn btn-primary">
+            🔍فتح شاشة البحث
+        </button>
+    </div>
+
+
+
+    <div class="status-row">
+        <div class="status-box" style="display: none;" data-status="جديدة" id="status-جديدة">
+            <h4>جديدة</h4>
+            <div class="count">0</div>
+        </div>
+
+        <div class="status-box" style="display: none;" data-status="معاينة" id="status-معاينة">
+            <h4>معاينة</h4>
+            <div class="count">0</div>
+        </div>
+        <div class="status-box" style="display: none;" data-status="إرجاع للمعاين" id="status-إرجاع-للمعاين">
+            <h4>إرجاع للمعاين</h4>
+            <div class="count">0</div>
+        </div>
+        <div class="status-box" style="display: none;" data-status="مراجعة" id="status-مراجعة">
+            <h4>مراجعة</h4>
+            <div class="count">0</div>
+        </div>
+
+
+
+        <div class="status-box" style="display: none;" data-status="تحت الإجراء" id="status-تحت-الإجراء">
+            <h4>تحت الإجراء</h4>
+            <div class="count">0</div>
+        </div>
+        <div class="status-box" style="display: none;" data-status="إرجاع للمراجع" id="status-إرجاع-للمراجع">
+            <h4>إرجاع للمراجع</h4>
+            <div class="count">0</div>
+        </div>
+        <div class="status-box" style="display: none;" data-status="معتمدة" id="status-معتمدة">
+            <h4>معتمدة</h4>
+            <div class="count">0</div>
+        </div>
+        <div class="status-box" style="display: none;" data-status="مسودة" id="status-مسودة">
+            <h4>مسودة</h4>
+            <div class="count">0</div>
+        </div>
+        <div class="status-box" style="display: none;" data-status="مرسلة" id="status-مرسلة">
+            <h4>مرسلة</h4>
+            <div class="count">0</div>
+        </div>
+
+        <div class="status-box" style="display: none;" data-status="معلقة" id="status-معلقة">
+            <h4>معلقة</h4>
+            <div class="count">0</div>
+        </div>
+    </div>
+
+</div>
+<div id="samples-table-container" style="margin-top: 20px;"></div>

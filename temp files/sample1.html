@@ -1,0 +1,37 @@
+<td>
+    <a href="/app/basesample/${sample.name}" style="color: #007bff; font-weight: bold;">${sample.name}</a><br>
+    <span class="badge" style="background-color: #007bff; color: white;">${ageLabel}</span>
+</td>
+<td style="text-align:right;">
+    <span class="badge" style="background:#8b7230; color:white;">${sample.customer}</span><br>
+    <span style="color:red;">المالك: ${sample.owner2 || ""}</span><br>
+    <span>جوال: ${sample.ownermobile || ""}</span><br>
+    <span style="color:green;">طالب التقييم: ${sample.willtoevalution || ""}</span><br>
+    <span>جوال: ${sample.willtoevalutionmoblie || ""}</span>
+</td>
+<td style="text-align:center;">
+    <span class="badge" style="background:#6a317e; color:white;">${sample.region || ""}</span><br>
+    <span class="badge" style="background:#8a40a5; color:white;">${sample.city || ""}</span><br>
+    <span class="badge" style="background:#b87ecd; color:white;">${sample.gada || ""}</span>
+</td>
+<td style="text-align:center;">
+    معاين: ${sample.evaluation_name || ""}<br>
+    مراجع: ${usersMap[sample.review] || ""}
+</td>
+<td style="text-align:center;">${sample.instrementnumber || ""}<br>
+    <span class="badge" style="background:#b49032; color:white;">${sample.aqartype || "لم يحدد بعد"}</span>
+</td>
+<td style="text-align:center;">
+    ${sample.dateofcommissioning || ""}<br>
+    <span class="badge" style="background:#59a3b0; color:white;">${sample.commissioningnumber || ""}</span>
+</td>
+<td style="text-align:center;">
+    <span class="badge badge-${sample.workflow_state === " جديدة" ? "success" : "danger" }">${sample.workflow_state ||
+        ""}</span>
+</td>
+<td style="text-align:center; font-size:12px;" id="comment-${sample.name}">جاري التحميل...</td>
+`;
+
+<button id="go-back" class="">
+    الرجوع
+</button>

@@ -1,0 +1,105 @@
+<style>
+    #header-html {
+        margin: 0 auto;
+        direction: rtl;
+        background: #ffffff;
+        width: 794px !important;
+    }
+
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-left,
+    .header-right {
+        flex: 0 0 130px;
+        text-align: center;
+    }
+
+    .header-left img,
+    .header-right img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .header-center {
+        flex: 1;
+        text-align: center;
+    }
+
+    .header-center .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #16a085;
+        margin-bottom: 6px;
+    }
+
+    .header-center .sub-info {
+        font-size: 12px;
+        color: #34495e;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        /* مسافة بين العناصر */
+    }
+
+    .header-center .sub-info div {
+        white-space: nowrap;
+        /* منع كسر السطر */
+    }
+
+    #header-html table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #f5f5f5;
+        margin-top: 10px;
+    }
+
+    #header-html table td {
+        font-size: 12px;
+        padding: 4px 8px;
+        line-height: 1.2;
+        vertical-align: middle;
+    }
+</style>
+
+<div id="header-html">
+    <div class="header-row">
+        <!-- الشعار الأيسر -->
+        <div class="header-left">
+            {% set customer_name = doc.customer %}
+            <img src='http://amaken.space/{{ frappe.db.get_value("Customer", filters={"name": customer_name},fieldname="image" ) }}'
+                alt="شعار الشركة">
+        </div>
+
+        <!-- البيانات في الوسط -->
+        <div class="header-center">
+            <div class="title">تقرير تقييم عقاري</div>
+            <div class="sub-info">
+                <div>تاريخ إصدار التقرير: {{ frappe.format(doc.report_date, {'fieldtype': 'Date'}) }}</div>
+                <div>الرقم المرجعي للتقرير: {{ doc.name }}</div>
+                <div>رمز إيداع التقرير: {{ doc.qima_qr }}</div>
+            </div>
+        </div>
+
+        <!-- الشعار الأيمن -->
+        <div class="header-right">
+            <img src="/files/small.JPG" alt="شعار الشركة">
+        </div>
+    </div>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>هوية المقيم المعتمد</td>
+                <td>خالد عبد الكريم الجاسر</td>
+                <td>رقم الترخيص</td>
+                <td>1210000040</td>
+                <td>تاريخ الترخيص</td>
+                <td>01/03/1437 هـ</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

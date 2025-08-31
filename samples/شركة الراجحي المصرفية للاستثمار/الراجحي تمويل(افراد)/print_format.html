@@ -1,0 +1,1459 @@
+<!--===================================1th Page=====================================================-->
+
+{{ letter_head }}
+<div class="print-format">
+    <!--=======1th table========================-->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6" class="titles">بيانات العقار</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1" width="16.6%" class="subtitle">رقم الطلب</td>
+                <td colspan="1" width="16.6%">{{ doc.commissioningnumber or '-' }}</td>
+                <td colspan="1" width="16.6%" class="subtitle">رمز العقار</td>
+                <td colspan="1" width="16.6%">{{ doc.aqarcode or '-' }}</td>
+                <td colspan="1" width="16.6%" class="subtitle">تاريخ التكليف</td>
+                <td colspan="1" width="16.6%">{{ frappe.format(doc.dateofcommissioning, {'fieldtype':
+                    'Date'}) }}</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subtitle">رقم الصك</td>
+                <td colspan="1">{{ doc.instrementnumber or '-' }}</td>
+                <td colspan="1" class="subtitle">تاريخ الصك</td>
+                <td colspan="1">{{ doc.instrementdate or '-' }}</td>
+                <td colspan="1" class="subtitle">مصدر الصك</td>
+                <td colspan="1">{{ doc.instrementlocation or '-' }}</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subtitle">رقم الرخصة</td>
+                <td colspan="1">{{ doc.buildingpermitnumber or '-' }}</td>
+                <td colspan="1" class="subtitle">تاريخ الرخصة</td>
+                <td colspan="1">{{ doc.buildingpermitdate or '-' }}</td>
+                <td colspan="1" class="subtitle">عمر العقار</td>
+                <td colspan="1">{{ doc.aqarage or '-' }}</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subtitle">تاريخ المعاينة</td>
+                <td colspan="1">{{ frappe.format(doc.evaluation_date, {'fieldtype': 'Date'}) }}</td>
+                <td colspan="1" class="subtitle">تاريخ اصدار التقرير</td>
+                <td colspan="1">{{ frappe.format(doc.report_date, {'fieldtype': 'Date'}) }}</td>
+                <td colspan="1" class="subtitle">نوع العقار</td>
+                <td colspan="1">{{ doc.aqartype or '-' }}</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subtitle">اسم المالك</td>
+                <td colspan="1">{{ doc.owner2 or '-' }}</td>
+                <td colspan="1" class="subtitle">هوية العميل</td>
+                <td colspan="1">{{ doc.customerid or '-' }}</td>
+                <td colspan="1" class="subtitle">مستخدم التقرير</td>
+                <td colspan="1">{{ doc.willtoevalution or '-' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--=======2th table========================-->
+    <table>
+        <thead>
+            <tr class="borders">
+                <th colspan="10" class="titles">بيانات أساسية عن العقار</th>
+            </tr>
+            <tr class="borders titles">
+                <td colspan="2" class="titles">الموقع</td>
+                <td colspan="2" class="titles">حدود العقار</td>
+                <td colspan="1" class="titles">طول الحد</td>
+                <td colspan="1" class="titles">الموقع العام</td>
+                <td colspan="1" class="titles">نوع العقار</td>
+                <td colspan="1" class="titles">التصميم المعماري</td>
+                <td colspan="1" class="titles">المنسوب</td>
+                <td colspan="1" class="titles">الخدمات</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="borders">
+                <td colspan="1" class="subtitle ">المنطقة</td>
+                <td colspan="1">{{ doc.region or '-' }}</td>
+                <td colspan="1" class="subtitle ">شمالاً</td>
+                <td colspan="1">{{ doc.northern_border or '-' }}</td>
+                <td colspan="1">{{ doc.northern_length or '-' }}</td>
+                <td colspan="1"><input type="checkbox" {% if doc.genrallocation=="داخل النطاق" %} checked {% endif %}
+                        disabled> داخل النطاق</td>
+                <td colspan="1"><input type="checkbox" {% if doc.aqartype=="سكني" %} checked {% endif %} disabled> سكني
+                </td>
+                <td colspan="1"><input type="checkbox" {% if doc.structurestatus=="ردئ" %} checked {% endif %} disabled>
+                    ردئ</td>
+                <td colspan="1"><input type="checkbox" {% if doc.attributed=="مرتفع" %} checked {% endif %} disabled>
+                    مرتفع</td>
+                <td colspan="1"><input type="checkbox" {% if doc.ishavephone==1 %} checked {% endif %} disabled> هاتف
+                </td>
+            </tr>
+            <tr class="borders">
+                <td colspan="1" class="subtitle ">المحافظة</td>
+                <td colspan="1">{{ doc.city or '-' }}</td>
+                <td colspan="1" class="subtitle ">جنوباً</td>
+                <td colspan="1">{{ doc.southern_border or '-' }}</td>
+                <td colspan="1">{{ doc.southern_length or '-' }}</td>
+                <td colspan="1"><input type="checkbox" {% if doc.genrallocation=="المرحلة الأولى" %} checked {% endif %}
+                        disabled> المرحلة الأولى</td>
+                <td colspan="1"><input type="checkbox" {% if doc.aqartype=="تجاري" %} checked {% endif %} disabled>
+                    تجاري</td>
+                <td colspan="1"><input type="checkbox" {% if doc.structurestatus=="جيد" %} checked {% endif %} disabled>
+                    جيد</td>
+                <td colspan="1"><input type="checkbox" {% if doc.attributed=="مستوي" %} checked {% endif %} disabled>
+                    مستوي</td>
+                <td colspan="1"><input type="checkbox" {% if doc.ishavewater==1 %} checked {% endif %} disabled> مياه
+                </td>
+            </tr>
+            <tr class="borders">
+                <td colspan="1" class="subtitle ">المدينة</td>
+                <td colspan="1">{{ doc.city or '-' }}</td>
+                <td colspan="1" class="subtitle ">شرقاً</td>
+                <td colspan="1">{{ doc.eastern_border or '-' }}</td>
+                <td colspan="1">{{ doc.eastern_length or '-' }}</td>
+                <td colspan="1"><input type="checkbox" {% if doc.genrallocation=="المرحلة الثانية" %} checked {% endif
+                        %} disabled> المرحلة الثانية</td>
+                <td colspan="1" style="font-size:6px"><input type="checkbox" {% if doc.aqartype=="سكني تجاري" %} checked
+                        {% endif %} disabled> سكني تجاري</td>
+                <td colspan="1"><input type="checkbox" {% if doc.structurestatus=="ممتاز" %} checked {% endif %}
+                        disabled> ممتاز</td>
+                <td colspan="1"><input type="checkbox" {% if doc.attributed=="منخفض" %} checked {% endif %} disabled>
+                    منخفض</td>
+                <td colspan="1"><input type="checkbox" {% if doc.ishaveelectric==1 %} checked {% endif %} disabled>
+                    كهرباء</td>
+            </tr>
+            <tr class="borders">
+                <td colspan="1" class="subtitle ">الحي</td>
+                <td colspan="1">{{ doc.gada or '-' }}</td>
+                <td colspan="1" class="subtitle ">غرباً</td>
+                <td colspan="1">{{ doc.western_border or '-' }}</td>
+                <td colspan="1">{{ doc.western_length or '-' }}</td>
+                <td colspan="1"><input type="checkbox" {% if doc.genrallocation=="خارج النطاق" %} checked {% endif %}
+                        disabled> خارج النطاق</td>
+                <td colspan="1"><input type="checkbox" {% if doc.aqartype=="أخرى" %} checked {% endif %} disabled> أخرى
+                </td>
+                <td colspan="2">
+                    حالة المبنى:<br>
+                    <input type="checkbox" {% if doc.buildingstate=="جيد" %} checked {% endif %} disabled> جيد
+                    <input type="checkbox" {% if doc.buildingstate=="ممتاز" %} checked {% endif %} disabled> ممتاز
+                </td>
+                <td colspan="1"><input type="checkbox" {% if doc.ishavesanitation==1 %} checked {% endif %} disabled>
+                    صرف</td>
+            </tr>
+            <tr class="borders">
+                <td colspan="1" class="subtitle ">رقم القطعة</td>
+                <td colspan="1">{{ doc.piecenumber or '-' }}</td>
+                <td colspan="2" class="subtitle ">رقم المخطط</td>
+                <td colspan="1">{{ doc.plannednumber or '-' }}</td>
+                <td colspan="1" class="subtitle ">الشوارع</td>
+                <td colspan="4">
+                    <input type="checkbox" {% if doc.roadsasphalt=="مسفلتة" %} checked {% endif %} disabled> مسفلتة
+                    <input type="checkbox" {% if doc.roadsasphalt=="غير مسفلتة" %} checked {% endif %} disabled> غير
+                    مسفلتة
+                    <input type="checkbox" {% if doc.roadslighting=="مضاءة" %} checked {% endif %} disabled> مضاءة
+                    <input type="checkbox" {% if doc.roadslighting=="غير مضاءة" %} checked {% endif %} disabled> غير
+                    مضاءة
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--=======3th table========================-->
+    <table>
+
+        <thead>
+            <tr class="borders">
+                <th colspan="6" class="titles">وصف تشطيبات العقار والأعمال الإنشائية</th>
+            </tr>
+            <tr class="borders titles">
+                <td class="titles">نوع الواجهات والأبواب</td>
+                <td class="titles">نوع الأرضيات</td>
+                <td class="titles">هل يوجد بالمبنى</td>
+                <td class="titles">نوع التكييف</td>
+                <td class="titles">الهيكل الإنشائي</td>
+                <td class="titles">نوع الأسقف</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="borders">
+                <td>الشمالية: {{ doc.finishingnorth or '-' }}</td>
+                <td>الأحواش: {{ doc.finishingahwash or '-' }}</td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavewall==1 %} checked {% endif %} disabled> حوائط
+                    <input type="checkbox" {% if doc.ishavestairs==1 %} checked {% endif %} disabled> سلالم
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavecentral==1 %} checked {% endif %} disabled> مركزي
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.structuralstructure=="خرساني" %} checked {% endif %} disabled>
+                    خرساني
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.typeofbishop=="خرساني" %} checked {% endif %} disabled> خرسانية
+                </td>
+            </tr>
+            <tr class="borders">
+                <td>الجنوبية: {{ doc.finishingsouth or '-' }}</td>
+                <td>الاستقبال: {{ doc.finishingreception or '-' }}</td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavedoubleglass==1 %} checked {% endif %} disabled> زجاج مزدوج
+                    <input type="checkbox" {% if doc.ishaveelectricgarage==1 %} checked {% endif %} disabled> كراج
+                    كهربائي
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.ishaveseparateairconditioning==1 %} checked {% endif %} disabled>
+                    منفصل
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.structuralstructure=="حوائط حاملة" %} checked {% endif %} disabled>
+                    حوائط حاملة
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.typeofbishop=="كمرات حديديه" %} checked {% endif %} disabled> كمرات
+                    حديدية
+                </td>
+            </tr>
+            <tr class="borders">
+                <td>الشرقية: {{ doc.finishingeastern or '-' }}</td>
+                <td>المدخل: {{ doc.finishingentrance or '-' }}</td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavegypsumwithroof==1 %} checked {% endif %} disabled> جبس بالسقف
+                    <input type="checkbox" {% if doc.ishavenormalgarage==1 %} checked {% endif %} disabled> كراج عادي
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavewindow==1 %} checked {% endif %} disabled> شباك
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.structuralstructure=="مباني معدنية" %} checked {% endif %}
+                        disabled> مباني معدنية
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.typeofbishop=="كمرات خشبية" %} checked {% endif %} disabled> كمرات
+                    خشبية
+                </td>
+            </tr>
+            <tr class="borders">
+                <td>الغربية: {{ doc.finishingwest or '-' }}</td>
+                <td>الغرف: {{ doc.finishingrooms or '-' }}</td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavehiddenlighting==1 %} checked {% endif %} disabled> إضاءة
+                    مخفية
+                    <input type="checkbox" {% if doc.ishavegates==1 %} checked {% endif %} disabled> بوابات
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.isboradspilit==1 %} checked {% endif %} disabled> دولاب/سبلت
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.structuralstructure=="مباني خشبية" %} checked {% endif %} disabled>
+                    مباني خشبية
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.typeofbishop=="اخرى" %} checked {% endif %} disabled> أخرى
+                </td>
+            </tr>
+            <tr class="borders">
+                <td>الأبواب الخارجية: {{ doc.finishingexternal or '-' }}</td>
+                <td>الأبواب الداخلية: {{ doc.finishinginternal or '-' }}</td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavelifts==1 %} checked {% endif %} disabled> مصاعد
+                    <input type="checkbox" {% if doc.ishaveheaters==1 %} checked {% endif %} disabled> سخانات
+                </td>
+                <td>
+                    <input type="checkbox" {% if doc.acisinstalled=="غير مركب" %} checked {% endif %} disabled> غير مركب
+                </td>
+                <td colspan="2">
+                    نوعية العزل: {{ doc.typeofinsulation }}
+                </td>
+            </tr>
+            <tr class="borders">
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="checkbox" {% if doc.ishavearabicbath==1 %} checked {% endif %} disabled> حمام عربي
+                    <input type="checkbox" {% if doc.ishaveforeigner==1 %} checked {% endif %} disabled> حمام إفرنجي
+                </td>
+                <td colspan="3">
+                    <input type="checkbox" {% if doc.acisinstalled=="مركب" %} checked {% endif %} disabled> مركب بعدد
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--=======4th table========================-->
+    <div class="row" style="margin-top: 0px !important; margin-bottom: 0px !important;">
+        <div class="col-xs-6" style="padding-left:0">
+            <table style="width:100%; border-collapse: collapse;">
+
+                <thead>
+                    <tr>
+                        <th colspan="9">أسلوب التكلفة - طريقة الإحلال</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="titles">الاستعمال</td>
+                        <td colspan="2" class="titles">المساحة م2</td>
+                        <td colspan="2" class="titles">المتر المربع</td>
+                        <td colspan="2" class="titles">الإجمالي</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الأرض</td>
+                        <td colspan="2" class="bordertext">{{ doc.custom_earth_area }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.meterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.earthtotal) }}
+                        </td>
+                    </tr>
+                    {% if doc.vaultaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">القبو </td>
+                        <td colspan="2" class="bordertext">{{ doc.vaultaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.vaultmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.vaulttotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.groundflooraera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الدور الأرضي </td>
+                        <td colspan="2" class="bordertext">{{ doc.groundflooraera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.groundfloormeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.groundfloortotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.firstroundaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الدور الأول </td>
+                        <td colspan="2" class="bordertext">{{ doc.firstroundaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.firstroundmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.firstroundtotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.secondroundaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الدور الثاني </td>
+                        <td colspan="2" class="bordertext">{{ doc.secondroundaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.secondroundmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.secondroundtotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.recurringroundaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الدور المتكرر </td>
+                        <td colspan="2" class="bordertext">{{ doc.recurringroundaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.recurringroundmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.recurringroundtotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.annexearthaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الملحق الأرضي </td>
+                        <td colspan="2" class="bordertext">{{ doc.annexearthaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.annexearthmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.annexearthtotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.topannexroundaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الملحق العلوي</td>
+                        <td colspan="2" class="bordertext">{{ doc.topannexroundaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.topannexmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.topannextotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.mizanaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">ميزانين</td>
+                        <td colspan="2" class="bordertext">{{ doc.mizanaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.mizanmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.mizantotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.appartmentarea > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">شقة</td>
+                        <td colspan="2" class="bordertext">{{ doc.appartmentarea }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.appartmentmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.appartmenttotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.othersaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">أخرى</td>
+                        <td colspan="2" class="bordertext">{{ doc.othersaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.othersmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.otherstotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.speciaarea > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الجزء الخاص</td>
+                        <td colspan="2" class="bordertext">{{ doc.speciaarea }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.speciameterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.speciatotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.fencesaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الأسوار</td>
+                        <td colspan="2" class="bordertext">{{ doc.fencesaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.fencesmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.fencestotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    {% if doc.gardenaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">الحديقة</td>
+                        <td colspan="2" class="bordertext">{{ doc.gardenaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.gardenmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.gardentotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+                    ص
+                    {% if doc.swimpoolaera > 0 %}
+                    <tr class="borders">
+                        <td colspan="3" class="subtitle">المسبح</td>
+                        <td colspan="2" class="bordertext">{{ doc.swimpoolaera }}</td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.swimmeterprice) }}
+                        </td>
+                        <td colspan="2" class="bordertext">
+                            {{ "{:,.2f}".format(doc.swimtotal) }}
+                        </td>
+                    </tr>
+                    {% endif %}
+
+                    <tr>
+                        <td colspan="3" class="subtitle">إجمالي مساحة المباني</td>
+                        <td colspan="6" class="bordertext">{{ doc.totalarea1 }} م2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="subtitle">اجمالي تكاليف المباني</td>
+                        <td colspan="6" class="bordertext">
+                            {{ "{:,.2f}".format(doc.totalprice1) }} ر.س
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="subtitle">ربحية المطور</td>
+                        <td colspan="1" class="bordertext">{{ "{:,.2f}".format(doc.profit) }}%</td>
+                        <td colspan="6" class="bordertext">
+                            {{ "{:,.2f}".format(doc.profitamount) }} ر.س
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="subtitle">نسبة الاهلاك</td>
+                        <td colspan="1" class="bordertext">{{ "{:,.2f}".format(doc.lost) }}%</td>
+
+                        <td colspan="6" class="bordertext">
+                            {{ "{:,.2f}".format(doc.lostamount) }} ر.س
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="subtitle">اجمالي قيمة المباني بعد خصم الاهلاك</td>
+                        <td colspan="6" class="bordertext">
+                            {{ "{:,.2f}".format(doc.after_lost_amout) }} ر.س
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="subtitle">القيمة الإجمالية للعقار</td>
+                        <td colspan="6" class="bordertext">
+                            {{ "{:,.2f}".format(doc.buildingprice) }} ر.س
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-6" style="padding-right:0">
+            <table style="width:100%; border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th colspan="4">خدمات الكهرباء والمياه بالمبنى</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="1" class="subtitle"> عدد عدادات الكهرباء</td>
+                        <td colspan="1">{{ doc.numberofmetersofelectricity or '-' }}</td>
+                        <td colspan="1" class="subtitle">عدد عدادات المياه</td>
+                        <td colspan="1">{{ doc.numberofwatermeters or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" class="subtitle">رقم العداد</td>
+                        <td colspan="1">{{ doc.electricitymeternumbers or '-' }}</td>
+                        <td colspan="1" class="subtitle">رقم العداد</td>
+                        <td colspan="1">{{ doc.countersofwatermeters or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">في حالة وجود أكثر من عداد تكتب الأرقام وترفق مع التقييم</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="titles">في حال تقييم عمارة سكنية أو تجارية يتم تحديد كلا من:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" class="subtitle">الشقق</td>
+                        <td colspan="1">{{ doc.apartments or '-' }}</td>
+                        <td colspan="1" class="subtitle"> ايجارها</td>
+                        <td colspan="1">{{ doc.apartments_rent or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" class="subtitle">المحلات</td>
+                        <td colspan="1">{{ doc.shops or '-' }}</td>
+                        <td colspan="1" class="subtitle">ايجارها</td>
+                        <td colspan="1">{{ doc.shops_rent or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" class="subtitle">المكاتب</td>
+                        <td colspan="1">{{ doc.offices or '-' }}</td>
+                        <td colspan="1" class="subtitle">ايجارها</td>
+                        <td colspan="1">{{ doc.offices_rent or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" class="subtitle">أخرى</td>
+                        <td colspan="1">{{ doc.other or '-' }}</td>
+                        <td colspan="1" class="subtitle">ايجارها</td>
+                        <td colspan="1">{{ doc.other_rent or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="subtitle">إجمالي الايجارات السنوي</td>
+                        <td colspan="2">{{ doc.rent_total or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="subtitle">نسبة الدخل للعقار</td>
+                        <td colspan="2">{{ doc.rent_percent or '-' }}%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="subtitle">هل العقار به بعض التشطيبات لم تكتمل أو يحتاج لصيانة أو به شقوق
+                        </td>
+                        <td colspan="1">
+                            <input type="checkbox" {% if doc.finishing==0 %} checked {% endif %} disabled> لا
+                            <input type="checkbox" {% if doc.finishing==1 %} checked {% endif %} disabled> نعم
+                        </td>
+                        <td colspan="1">{{ doc.explain or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">تكاليف الصيانة التقديرية ({{ doc.proxmitymantiancecost or '-' }}) ريال</td>
+                        <td colspan="2">تشطيبات غير مكتملة: {{ doc.observationandshortcomingsbuilding or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="titles">سعر التقييم النهائي</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">{{ "{:,.2f}".format(doc.last_value) }} ر.س</td>
+                        <td colspan="3">{{ frappe.utils.money_in_words(doc.last_value) or '-' }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+{{ footer }}
+<br />
+<!--===================================End 1th Page=====================================================-->
+
+<!--===================================2th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+    <table style="width:100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th colspan="20">تفاصيل متعلقة بالعقار</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="5">العقار مأهول</td>
+                <td colspan="5">
+                    <input type="checkbox" {% if doc.buildingavilablity !="خالي" %} checked {% endif %} disabled> نعم
+                    <input type="checkbox" {% if doc.buildingavilablity=="خالي" %} checked {% endif %} disabled> لا
+
+                </td>
+                <td colspan="5">العقار مطابق لفسح البناء</td>
+                <td colspan="5">
+                    <input type="checkbox" {% if doc.isaqaridenticalwithbuildinglicense=="نعم" %} checked {% endif %}
+                        disabled> نعم
+                    <input type="checkbox" {% if doc.isaqaridenticalwithbuildinglicense=="لا" %} checked {% endif %}
+                        disabled> لا
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">العقار جاهز للسكن</td>
+                <td colspan="5">
+                    <input type="checkbox" {% if doc.buildingstate !="متهالك" and doc.buildingstate !="رديء" %} checked
+                        {% endif %} disabled> نعم
+                    <input type="checkbox" {% if doc.buildingstate=="متهالك" and doc.buildingstate=="رديء" %} checked {%
+                        endif %} disabled> لا
+                </td>
+                <td colspan="5">العقار مخالف لأنظمة البناء</td>
+                <td colspan="5">
+                    <input type="checkbox" {% if doc.isaqaridenticalwithbuildinglicense=="نعم" %} checked {% endif %}
+                        disabled> نعم
+                    <input type="checkbox" {% if doc.isaqaridenticalwithbuildinglicense=="لا" %} checked {% endif %}
+                        disabled> لا
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">إحداثية موقع العقار</td>
+                <td colspan="4">{{ doc.latitude or '-'}}</td>
+                <td colspan="1">E</td>
+                <td colspan="4">{{ doc.longitude or '-'}}</td>
+                <td colspan="1">N</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table style="width:100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th colspan="4">رأي شركة التقييم</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1">وصف العقار</td>
+                <td colspan="3">{{ doc.aqar_desc or '-' }}</td>
+            </tr>
+            <tr>
+                <td colspan="1">ملاحظات المقيم</td>
+                <td colspan="3">{{ doc.evaluators_opinion or '-' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width:100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th colspan="4">حجم المبيعات والنمو في حي العقار محل التقييم</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1"> حجم المبيعات في الحي خلال سنة (التداول) </td>
+                <td colspan="3">{{ doc.trading or '-' }}</td>
+            </tr>
+            <tr>
+                <td colspan="1"> حالة النمو </td>
+                <td colspan="4">{{ doc.growth or '-' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table style="width:100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th colspan="4">إمكانية الاستخدام في حال وجود أضرار ظاهرية</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="1">
+                    <input type="checkbox" {% if doc.custom_isusble==1 %} checked {% endif %} disabled> قابل للاستخدام
+                </td>
+                <td colspan="1">
+                    <input type="checkbox" {% if doc.custom_isusble==0 %} checked {% endif %} disabled> غير قابل
+                    للاستخدام
+                </td>
+                <td colspan="1">
+                    <input type="checkbox" {% if doc.custom_isaccept==1 %} checked {% endif %} disabled> مقبول فنيا
+                </td>
+                <td colspan="1">
+                    <input type="checkbox" {% if doc.custom_isaccept==0 %} checked {% endif %} disabled> غير مقبول فنيا
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div class="tableb">
+        <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th colspan="12" class="titles">هذا التقرير تمت مراجعته واعتماده من قبل المقيم المعتمد</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" class="subtitle">الاسم</td>
+                    <td colspan="2">خالد عبد الكريم الجاسر</td>
+
+                    <td colspan="2" class="subtitle">فرع التقييم</td>
+                    <td colspan="2">فرع العقار</td>
+
+                    <td colspan="2" rowspan="3" width="16.6%">
+                        <img src="http://192.168.1.31/files/ceo.png" style="height:50px; width:100px" />
+                    </td>
+                    <td colspan="2" rowspan="3" width="16.6%">
+                        <img src="http://192.168.1.31/files/stamp_ev.JPG" style="width:100px; height:50px" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" class="subtitle">الصفة</td>
+                    <td colspan="2">المدير التنفيذي</td>
+
+                    <td colspan="2" class="subtitle">تاريخ التقرير</td>
+                    <td colspan="2">{{ doc.report_date }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="subtitle">رقم العضوية</td>
+                    <td colspan="2">1210000040</td>
+
+                    <td colspan="2" class="subtitle">فئة العضوية</td>
+                    <td colspan="2">زميل</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+{{ footer }}
+<br />
+<!--===================================End 2th Page=====================================================-->
+
+
+<!--===================================3th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="4" class="titles">إقرار</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4">
+                    نقر نحن شركة أماكن للتقييم العقاري انه وبناء على المستندات الواردة من مصرف الراجحي، فقد تم الوقوف
+                    على العقار المبين وثبت لنا صحة البيانات المشار إليها ومطابقتها لأرض الواقع، كما نؤكد مطابقة العقار
+                    المراد تقييمه للمخطط المعتمد للمدينة أو القرية أو المنطقة الواقع في دائرتها العقار أو الوحدة
+                    العقارية موضوع الطلب ونصادق على المستندات المستلمة بالطلب. كما نؤكد بخلو مساحات وحدود العقار محل
+                    التقييم من اي نزع ملكيه كله أو بعضه للمنفعة العامة أو الخاصة وذلك لاستبعاد الجزء المنزوعة ملكيته من
+                    صك الملكية المسجل، كما نؤكد فحصنا إذا كان العقار حكومياً وممنوحاً لطالب العقار بشروط معينة كزراعته
+                    أو تعميره خلال مدة معينة.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="10" class="titles">صورة المخطط</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="10" class="bordertext">
+                    {% if doc.custom_planer_image %}
+                    <img src="{{ doc.custom_planer_image }}" />
+                    {% endif %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="10" class="titles">صورة جوية للعقار</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="10" class="bordertext">
+                    <img
+                        src="http://maps.googleapis.com/maps/api/staticmap?zoom=15&size=850x255&markers=color:red|label:T|{{ doc.latitude }},{{ doc.longitude }}&maptype=hybrid&sensor=true&key=AIzaSyAKEzk2mxw_sA_NvKxplyIZFJpZ7VlZZDU">
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+{{ footer }}
+<br />
+<!--===================================End 3th Page=====================================================-->
+
+<!--===================================4th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="4">المقارنات للاراضي</th>
+            </tr>
+            <tr>
+                <td class="titles">تفاصيل العقار</td>
+                <td class="titles">المقارن 1</td>
+                <td class="titles">المقارن 2</td>
+                <td class="titles">المقارن 3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="subtitle">المساحة</td>
+                <td>{{ doc.area1 or '-' }}</td>
+                <td>{{ doc.area2 or '-' }}</td>
+                <td>{{ doc.area3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">نوع العملية</td>
+                <td>{{ doc.type1 or '-' }}</td>
+                <td>{{ doc.type2 or '-' }}</td>
+                <td>{{ doc.type3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">تاريخ التنفيذ</td>
+                <td>{{ doc.date1 or '-' }}</td>
+                <td>{{ doc.date2 or '-' }}</td>
+                <td>{{ doc.date3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">بعده عن العقار</td>
+                <td>{{ doc.distance1 or '-' }}</td>
+                <td>{{ doc.distance2 or '-' }}</td>
+                <td>{{ doc.distance3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">نوع الاستخدام</td>
+                <td>{{ doc.aqartype1 or '-' }}</td>
+                <td>{{ doc.aqartype2 or '-' }}</td>
+                <td>{{ doc.aqartype3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">عدد الشوارع</td>
+                <td>{{ doc.streets1 or '-' }}</td>
+                <td>{{ doc.streets2 or '-' }}</td>
+                <td>{{ doc.streets3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">عرض الشوارع</td>
+                <td>{{ doc.width1 or '-' }}</td>
+                <td>{{ doc.width2 or '-' }}</td>
+                <td>{{ doc.width3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">الإحداثيات</td>
+                <td>{{ doc.location1 or '-' }}</td>
+                <td>{{ doc.location2 or '-' }}</td>
+                <td>{{ doc.location3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">السعر</td>
+                <td>{{ doc.price1 or '-' }}</td>
+                <td>{{ doc.price2 or '-' }}</td>
+                <td>{{ doc.price2 or '-' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="4">المقارنات للمباني</th>
+            </tr>
+            <tr>
+                <td class="titles">تفاصيل العقار</td>
+                <td class="titles">المقارن 1</td>
+                <td class="titles">المقارن 2</td>
+                <td class="titles">المقارن 3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="subtitle">المساحة</td>
+                <td>{{ doc.lands_area1 or '-' }}</td>
+                <td>{{ doc.lands_area2 or '-' }}</td>
+                <td>{{ doc.lands_area3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">نوع العملية</td>
+                <td>{{ doc.lands_type1 or '-' }}</td>
+                <td>{{ doc.lands_type2 or '-' }}</td>
+                <td>{{ doc.lands_type3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">تاريخ التنفيذ</td>
+                <td>{{ doc.lands_date1 or '-' }}</td>
+                <td>{{ doc.lands_date2 or '-' }}</td>
+                <td>{{ doc.lands_date3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">بعده عن العقار</td>
+                <td>{{ doc.lands_distance1 or '-' }}</td>
+                <td>{{ doc.lands_distance2 or '-' }}</td>
+                <td>{{ doc.lands_distance3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">نوع الاستخدام</td>
+                <td>{{ doc.lands_aqartype1 or '-' }}</td>
+                <td>{{ doc.lands_aqartype2 or '-' }}</td>
+                <td>{{ doc.lands_aqartype3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">عدد الشوارع</td>
+                <td>{{ doc.lands_streets1 or '-' }}</td>
+                <td>{{ doc.lands_streets2 or '-' }}</td>
+                <td>{{ doc.lands_streets3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">عرض الشوارع</td>
+                <td>{{ doc.lands_width1 or '-' }}</td>
+                <td>{{ doc.lands_width2 or '-' }}</td>
+                <td>{{ doc.lands_width3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">الإحداثيات</td>
+                <td>{{ doc.lands_location1 or '-' }}</td>
+                <td>{{ doc.lands_location2 or '-' }}</td>
+                <td>{{ doc.lands_location3 or '-' }}</td>
+            </tr>
+            <tr>
+                <td class="subtitle">السعر</td>
+                <td>{{ doc.lands_price1 or '-' }}</td>
+                <td>{{ doc.lands_price2 or '-' }}</td>
+                <td>{{ doc.lands_price3 or '-' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="10">خريطة المقارنات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="10">
+                    {% set main_location = doc.latitude ~ "," ~ doc.longitude %}
+                    {% set additional_locations = [ doc.location1, doc.location2, doc.location3] %}
+                    <img
+                        src="http://maps.googleapis.com/maps/api/staticmap?center={{ main_location }}&zoom=16&size=850x245&markers=color:red|label:T|{{ main_location }}{% for location in additional_locations %}&markers=color:blue|label:{{ loop.index }}|{{ location }}{% endfor %}&maptype=hybrid&sensor=true&key=AIzaSyAKEzk2mxw_sA_NvKxplyIZFJpZ7VlZZDU" />
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+{{ footer }}
+<br />
+<!--===================================End 4th Page=====================================================-->
+
+<!--=================================== 5th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+
+
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <tr>
+            <th colspan="4">تسويات الأراضي</th>
+        </tr>
+        <tr>
+            <td class="titles">عناصر المقارنة</td>
+            <td class="titles">العقار بالمقارن (1)</td>
+            <td class="titles">العقار بالمقارن (2)</td>
+            <td class="titles">العقار بالمقارن (3)</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية عامل الوقت</td>
+            <td>{{ doc.time_factor1 }}</td>
+            <td>{{ doc.time_factor2 }}</td>
+            <td>{{ doc.time_factor3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية شروط التمويل</td>
+            <td>{{ doc.terms1 }}</td>
+            <td>{{ doc.terms2 }}</td>
+            <td>{{ doc.terms3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية ظروف السوق</td>
+            <td>{{ doc.conditions1 }}</td>
+            <td>{{ doc.conditions2 }}</td>
+            <td>{{ doc.conditions3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">إجمالي تسويات التمويل والسوق%</td>
+            <td>{{ doc.total_financing1 }}</td>
+            <td>{{ doc.total_financing2 }}</td>
+            <td>{{ doc.total_financing3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">سعر البيع بعد تسوية شروط التمويل وظروف السوق</td>
+            <td>{{ "{:,.2f}".format(doc.selling_after1) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.selling_after2) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.selling_after3) }} ر.س</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية المساحة</td>
+            <td>{{ doc.space1 }}</td>
+            <td>{{ doc.space2 }}</td>
+            <td>{{ doc.space3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسويات أخرى</td>
+            <td>{{ doc.other_adjustments1 }}</td>
+            <td>{{ doc.other_adjustments2 }}</td>
+            <td>{{ doc.other_adjustments3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">سعر البيع بعد التسويات</td>
+            <td>{{ "{:,.2f}".format(doc.selling_price1) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.selling_price2) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.selling_price3) }} ر.س</td>
+        </tr>
+        <tr>
+            <td class="subtitle">الأوزان النسبية للعقارات المقارنة</td>
+            <td>{{ doc.weight1 }}%</td>
+            <td>{{ doc.weight2 }}%</td>
+            <td>{{ doc.weight3 }}%</td>
+        </tr>
+        <tr>
+            <td class="subtitle">مساهمة العقارات المقارنة حسب الوزن النسبي</td>
+            <td>{{ "{:,.2f}".format(doc.contribution1) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.contribution2) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.contribution3) }} ر.س</td>
+        </tr>
+        <tr>
+            <td class="subtitle" colspan="2">سعر المتر</td>
+            <td class="titles" colspan="2">{{ "{:,.2f}".format(doc.meter_price) }} ر.س</td>
+
+        </tr>
+        <tr>
+
+            <td class="subtitle" colspan="2">القيمة السوقية بطريقة البيوع المقارنة</td>
+            <td class="titles" colspan="2">{{ "{:,.2f}".format(doc.market_value) }} ر.س</td>
+        </tr>
+    </table>
+
+
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <tr>
+            <th colspan="4">تسويات المباني</th>
+        </tr>
+        <tr>
+            <td class="titles">عناصر المقارنة</td>
+            <td class="titles">العقار بالمقارن (1)</td>
+            <td class="titles">العقار بالمقارن (2)</td>
+            <td class="titles">العقار بالمقارن (3)</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية عامل الوقت</td>
+            <td>{{ doc.lands_time_factor1 }}</td>
+            <td>{{ doc.lands_time_factor2 }}</td>
+            <td>{{ doc.lands_time_factor3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية شروط التمويل</td>
+            <td>{{ doc.lands_terms1 }}</td>
+            <td>{{ doc.lands_terms2 }}</td>
+            <td>{{ doc.lands_terms3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية ظروف السوق</td>
+            <td>{{ doc.lands_conditions1 }}</td>
+            <td>{{ doc.lands_conditions2 }}</td>
+            <td>{{ doc.lands_conditions3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">إجمالي تسويات التمويل والسوق%</td>
+            <td>{{ doc.lands_total_financing1 }}</td>
+            <td>{{ doc.lands_total_financing2 }}</td>
+            <td>{{ doc.lands_total_financing3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">سعر البيع بعد تسوية شروط التمويل وظروف السوق</td>
+            <td>{{ "{:,.2f}".format(doc.lands_selling_after1) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.lands_selling_after2) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.lands_selling_after3) }} ر.س</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسوية المساحة</td>
+            <td>{{ doc.lands_space1 }}</td>
+            <td>{{ doc.lands_space2 }}</td>
+            <td>{{ doc.lands_space3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">تسويات أخرى</td>
+            <td>{{ doc.lands_other_adjustments1 }}</td>
+            <td>{{ doc.lands_other_adjustments2 }}</td>
+            <td>{{ doc.lands_other_adjustments3 }}</td>
+        </tr>
+        <tr>
+            <td class="subtitle">سعر البيع بعد التسويات</td>
+            <td>{{ "{:,.2f}".format(doc.lands_selling_price1) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.lands_selling_price2) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.lands_selling_price3) }} ر.س</td>
+        </tr>
+        <tr>
+            <td class="subtitle">الأوزان النسبية للعقارات المقارنة</td>
+            <td>{{ doc.lands_weight1 }}%</td>
+            <td>{{ doc.lands_weight2 }}%</td>
+            <td>{{ doc.lands_weight3 }}%</td>
+        </tr>
+        <tr>
+            <td class="subtitle">مساهمة العقارات المقارنة حسب الوزن النسبي</td>
+            <td>{{ "{:,.2f}".format(doc.lands_contribution1) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.lands_contribution2) }} ر.س</td>
+            <td>{{ "{:,.2f}".format(doc.lands_contribution3) }} ر.س</td>
+        </tr>
+        <tr>
+            <td class="subtitle" colspan="2">سعر المتر</td>
+            <td class="titles" colspan="2">{{ "{:,.2f}".format(doc.lands_meter_price) }} ر.س</td>
+
+        </tr>
+        <tr>
+
+            <td class="subtitle" colspan="2">القيمة السوقية بطريقة البيوع المقارنة</td>
+            <td class="titles" colspan="2">{{ "{:,.2f}".format(doc.lands_market_value) }} ر.س</td>
+        </tr>
+    </table>
+
+</div>
+{{ footer }}
+<br />
+<!--===================================End 5th Page=====================================================-->
+
+<!--===================================6th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+
+    <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="2" class="titles">صور العقار</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set attachments = frappe.get_all("File",
+            filters={ "attached_to_name": doc.name },
+            fields=["file_url", "is_print_image"]
+            )[:6] %}
+
+            {% set filtered_images = [] %}
+            {% for attachment in attachments %}
+            {% if attachment.is_print_image == 1 %}
+            {% set _ = filtered_images.append(attachment) %}
+            {% endif %}
+            {% endfor %}
+
+            {% for image in filtered_images %}
+            {% if loop.index0 % 2 == 0 %}
+            <tr>
+                {% endif %}
+
+                <td style="text-align: center;">
+                    <img src="{{ image.file_url }}"
+                        style="width:370px !important; height:240px !important; padding:4px; margin: 2px; border:solid 1px #aaa; border-radius: 6px; image-orientation: auto;" />
+                </td>
+
+                {% if loop.index0 % 2 == 1 %}
+            </tr>
+            {% endif %}
+            {% endfor %}
+
+            {% if filtered_images|length % 2 != 0 %}
+            </tr> <!-- إغلاق الصف الأخير إذا لم يكن مكتملاً -->
+            {% endif %}
+        </tbody>
+    </table>
+
+</div>
+{{ footer }}
+<br />
+<!--===================================End 6th Page=====================================================-->
+
+<!--===================================7th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+    <div class="tableb">
+        <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th colspan="5" class="titles">معايير التقييم الدولية</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="subtitle" colspan="1">نوع التقرير</td>
+                    <td class="bordertext" colspan="4">{{ doc.report_type }}</td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">تاريخ التقييم</td>
+                    <td class="bordertext" colspan="4">{{ doc.evaluation_date }}</td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">الغرض من التقييم</td>
+                    <td class="bordertext" colspan="4">{{ doc.purpose_of_evaluation }}</td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">أساس القيمة وتعريفها</td>
+                    <td class="bordertext" colspan="4">
+                        {{ doc.value_basis }} -
+                        {{ frappe.db.get_value("Values", doc.value_basis, "dicription" ) }}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">أسلوب التقييم</td>
+                    <td class="bordertext" colspan="4">
+                        <input type="checkbox" {% if doc.market_select !="" %} checked {% endif %} disabled> أسلوب السوق
+                        | <input type="checkbox" {% if doc.cost_select !="" %} checked {% endif %} disabled> أسلوب
+                        التكلفة
+                        | <input type="checkbox" {% if doc.income_select1 or doc.income_select2 !="" %} checked {% endif
+                            %} disabled> أسلوب الدخل
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">طريقة التقييم</td>
+                    <td class="bordertext" colspan="4">
+                        {% if doc.market_select %}
+                        <div>{{ doc.market_select }}</div>
+                        {% endif %}
+                        {% if doc.cost_select %}
+                        <div>{{ doc.cost_select }}</div>
+                        {% endif %}
+                        {% if doc.income_select1 %}
+                        <div>{{ doc.income_select1 }}</div>
+                        {% endif %}
+
+                        {% if doc.income_select2 %}
+                        <div>{{ doc.income_select2 }}</div>
+                        {% endif %}
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">المستخدمون الآخرون</td>
+                    <td class="bordertext" colspan="4">{{ doc.otherusers }}</td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">استنتاج القيمة</td>
+                    <td class="bordertext" colspan="4">
+                        {% if doc.market_select %}
+                        يقدم أسلوب السوق مؤشراً للقيمة من خلال مقارنة الأصل مــع أصول مطابقة أو مقارنة (مشابهة) تتوفر
+                        عنها
+                        معلومات سعرية.
+                        {% endif %}
+                        {% if doc.cost_select %}
+                        يقدم أسلوب التكلفة مؤشرا للقيمة باستخدام المبدأ الاقتصادي الذي ينص على أن المشتري لن يدفع لأصل
+                        ما
+                        أكثر من تكلفة الحصول على أصلة ذي منفعة مماثلة سواء عن طريق الشراء أو البناء ما لم تكن هناك عوامل
+                        متعلقة بالوقت، أو الإزعاج، أو المخاطر، أو أي عوامل أخرى متعلقة.
+                        {% endif %}
+                        {% if doc.income_select1 or doc.income_select2 %}
+                        يقدم أسلوب الدخل مؤشرا على القيمة عن طريق تحويل التدفقات النقدية المستقبلية إلى قيمة حالية
+                        واحدة،
+                        ووفقا لهذا الأسلوب يتم تحديد قيمة الأصل بالرجوع إلى قيمة الإيرادات أو التدفقات النقدية أو توفير
+                        التكاليف من الأصل، ولها عدة طرق وهي عبارة عن تطبيقات متنوعة في استخدام طريقة التدفقات النقدية
+                        المخصومة.
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">الاستخدام المقصود </td>
+                    <td class="bordertext" colspan="4">
+                        {{ doc.purpose_of_evaluation }}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="subtitle" colspan="1">المستندات المقدمة من طالب التقييم</td>
+                    <td class="bordertext" colspan="4">{{ doc.files }}</td>
+                </tr>
+
+
+
+                {% set standards = frappe.get_all("standards",
+                filters={ "check": 1 },
+                fields=["title", "def"],
+                order_by="sort asc"
+                ) %}
+
+                {% for item in standards %}
+                <tr>
+                    <td class="subtitle" colspan="1">{{ item.title }}</td>
+                    <td class="bordertext" colspan="4">{{ item.def }}</td>
+                </tr>
+                {% endfor %}
+
+
+
+                <tr>
+                    <td class="subtitle" colspan="1">رقم ورمز الإيداع</td>
+                    <td class="bordertext" colspan="4">
+                        {{ doc.qima_qr }}
+                        {% if doc.attach_qima_qr %}
+                        <div style="width: 105px">
+                            <img src="http://192.168.1.31/{{ doc.attach_qima_qr }}" height="100" width="100px" />
+                        </div>
+
+
+                        {% endif %}
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+{{ footer }}
+<br />
+<!--===================================End 7th Page=====================================================-->
+
+<!--===================================8th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+
+    <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th class="titles">
+                    إثبات معاينة عقار
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    نقر نحن شركة أماكن للتقيم العقاري , سجل تجاري رقم 1010443011 أن المقيم الميداني - مالك ناوي العنزي -
+                    رقم إقامة او بطاقة احوال - 1210002144 - قد قام بمعاينة العقار والوقوف عليه بتاريخ - 07/11/2025 -
+                    بالتنسيق مع المالك او من ينوب عنه المدعو: مشعل مسلم لويفي العطوي : جوال رقم 0532717614
+                    ونقر ان المقيم قد عاين العقار لمرة واحدة فقط مرتبطة بهذا التقرير رقم -38802- وفي حال ثبت وقوف المقيم
+                    على نفس العقار من شركة/مكتب تقييم أخرى/آخر ولنفس طالب التقييم فنتحمل كافة التبعات القانونية
+                    والمرتبطة بذلك وللمصرف الحق في اتخاذ ما يراه مناسبا من إجراءات
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="borders" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th colspan="10" class="titles">صورة العقار في حال المعاينة</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="10" class="bordertext">
+                    {% if doc.custom_sample_image %}
+                    <img src="{{ doc.custom_sample_image }}" />
+                    {% endif %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{{ footer }}
+<br />
+<!--===================================End8th Page=====================================================-->
+
+
+<!--===================================9th Page=====================================================-->
+<div style="page-break-before: always;"></div>
+{{ letter_head }}
+<div class="print-format">
+    <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+            <tr>
+                <th class="titles">
+                    شهادةالتسجيل في موقع قيمة
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="#">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+{{ footer }}
+<br />
+<!--===================================End 9th Page=====================================================-->

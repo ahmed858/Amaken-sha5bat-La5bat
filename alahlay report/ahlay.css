@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+.bordertext {
+    border-bottom: 1px solid #d9ead3 !important;
+}
+
+.print-format {
+    /*font-family: "Times New Roman", Times, serif;*/
+    font-size: 14px;
+    margin: 0 auto 0;
+    padding: 20px !important;
+
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.titles {
+    text-align: center;
+    background-color: #229c98;
+    color: #ffffff;
+}
+
+.subtitle {
+    background-color: #229c98;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    color: #ffffff;
+}
+
+.headt {
+    border: 1px solid #d9ead3;
+    padding-left: 2px !important;
+    padding-right: 15px !important;
+}
+
+.checker {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}

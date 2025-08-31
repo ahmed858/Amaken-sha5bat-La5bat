@@ -1,5 +1,15 @@
 <div class="print-format2">
 
+    <div class="maintitle">
+        <h6>تاريخ إصدار التقرير: {{ frappe.format(doc.report_date, {'fieldtype': 'Date'}) }}</h6>
+        <h6>الرقم المرجعي للتقرير: {{ doc.name }}</h6>
+        <h5>رمز إيداع التقرير: {{ doc.qima_qr }}</h5>
+        <h2> اسم العميل: {{ doc.customer }} </h2>
+        <h5>نوع العقار: {{ doc.aqartype }}</h5>
+    </div>
+
+
+
 </div>
 <br />
 <div style="page-break-before: always;"></div>
@@ -20,9 +30,9 @@
             <tbody>
 
                 <tr class="borders">
-                    <td class="subtitle" style="width: 16.66%;">إسم العميل</td>
+                    <td class="subtitle" style="width: 16.66%;">اسم العميل</td>
                     <td class="bordertext" style="width: 16.66%;">{{ doc.customer }}</td>
-                    <td class="subtitle" style="width: 16.66%;">إسم مستخدم تقرير التقييم</td>
+                    <td class="subtitle" style="width: 16.66%;">اسم مستخدم تقرير التقييم</td>
                     <td class="bordertext" style="width: 16.66%;">{{ doc.willtoevalution }}</td>
                     <td class="subtitle" style="width: 16.66%;">فرضية القيمة</td>
                     <td class="bordertext" style="width: 16.66%;">{{ doc.value_hypothesis }}</td>
@@ -187,15 +197,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="subtitle">إسم المدينة</td>
+                    <td class="subtitle">اسم المدينة</td>
                     <td class="bordertext">{{ doc.city }}</td>
-                    <td class="subtitle">إسم الحي</td>
+                    <td class="subtitle">اسم الحي</td>
                     <td class="bordertext">{{ doc.gada }}</td>
-                    <td class="subtitle">إسم الشارع</td>
+                    <td class="subtitle">اسم الشارع</td>
                     <td class="bordertext">{{ doc.nearestroad }}</td>
                 </tr>
                 <tr>
-                    <td class="subtitle">إسم المخطط</td>
+                    <td class="subtitle">اسم المخطط</td>
                     <td class="bordertext">{{ doc.plannername }}</td>
                     <td class="subtitle">رقم المخطط</td>
                     <td class="bordertext">{{ doc.plannednumber }}</td>
@@ -211,7 +221,7 @@
                     <td class="bordertext">{{ doc.latitude }} {{ doc.longitude }}</td>
                 </tr>
                 <tr>
-                    <td class="subtitle">إسم المالك</td>
+                    <td class="subtitle">اسم المالك</td>
                     <td class="bordertext">{{ doc.owner2 }}</td>
                     <td class="subtitle">رقم الصك</td>
                     <td class="bordertext">{{ doc.instrementnumber }}</td>
@@ -253,87 +263,39 @@
             <tbody>
                 <tr>
                     <td colspan="2" class="bordertext" style="width: 33%;">
-
-                        {% if doc.market_approach==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        أسلوب السوق
-
-
+                        <input type="checkbox" {% if doc.market_approach==1 %} checked {% endif %} disabled> أسلوب السوق
                     </td>
                     <td colspan="2" class="bordertext" style="width: 33%;">
-                        {% if doc.cost_approach==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        أسلوب التكلفة
+                        <input type="checkbox" {% if doc.cost_approach==1 %} checked {% endif %} disabled> أسلوب التكلفة
                     </td>
                     <td colspan="2" class="bordertext" style="width: 33%;">
-                        {% if doc.income_method==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        أسلوب السوق
-
-
+                        <input type="checkbox" {% if doc.income_method==1 %} checked {% endif %} disabled> أسلوب السوق
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="bordertext">
-                        {% if doc.comparisons_method==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        مقارنات الأراضي
-
-                        {% if doc.heuristic_method==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        مقارنات المباني
-
+                        <input type="checkbox" {% if doc.comparisons_method==1 %} checked {% endif %} disabled> مقارنات
+                        الأراضي
+                        <br>
+                        <input type="checkbox" {% if doc.heuristic_method==1 %} checked {% endif %} disabled> مقارنات
+                        المباني
                     </td>
                     <td colspan="2" class="bordertext">
-                        {% if doc.destructive_replacement_method==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        الإحلال
-
-                        {% if doc.collection_method==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        الجمع
-
+                        <input type="checkbox" {% if doc.destructive_replacement_method==1 %} checked {% endif %}
+                            disabled> الإحلال
+                        <br>
+                        <input type="checkbox" {% if doc.collection_method==1 %} checked {% endif %} disabled> الجمع
                     </td>
                     <td colspan="2" class="bordertext">
-                        {% if doc.investment_method==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
-                        رسملة الدخل
-
-                        {% if doc.residual_value_method==1 %}
-                        ☑
-                        {% else %}
-                        ☐
-                        {% endif %}
+                        <input type="checkbox" {% if doc.investment_method==1 %} checked {% endif %} disabled> رسملة
+                        الدخل
+                        <br>
+                        <input type="checkbox" {% if doc.residual_value_method==1 %} checked {% endif %} disabled>
                         القيمة المتبقية
-
-
                     </td>
                 </tr>
             </tbody>
+
         </table>
 
     </div>
@@ -411,8 +373,8 @@
                 <tr class="bordertext">
                     <td class="subtitle" style="width: 25%;">هل العقار على الطبيعة مطابق لرخصة البناء</td>
                     <td style="width: 25%;">
-                        <input type="checkbox" {% if doc.isaqaridenticalwithbuildinglicense=="نعم" %} checked {% endif
-                            %} disabled> نعم
+                        <input type="checkbox" {% if doc.isaqaridenticalwithbuildinglicense=="نعم" %} checked {% endif%}
+                            disabled> نعم
                         <input type="checkbox" {% if doc.isaqaridenticalwithbuildinglicense=="لا" %} checked {% endif %}
                             disabled> لا
                     </td>
@@ -516,63 +478,7 @@
                     <td class="bordertext" style="width: 80%;">
                         {{ doc.finisingtype }}
 
-                        {% if doc.finishingnorth %}
-                        الواجهة الشمالية: {{ doc.finishingnorth }}،
-                        {% endif %}
-                        {% if doc.finishingsouth %}
-                        الواجهة الجنوبية: {{ doc.finishingsouth }}،
-                        {% endif %}
-                        {% if doc.finishingeastern %}
-                        الواجهة الشرقية: {{ doc.finishingeastern }}،
-                        {% endif %}
-                        {% if doc.finishingwest %}
-                        الواجهة الغربية: {{ doc.finishingwest }}.
-                        {% endif %}
-                        {% if doc.finishingahwash %}
-                        أرضية الأحواش: {{ doc.finishingahwash }}،
-                        {% endif %}
-                        {% if doc.finishingreception %}
-                        أرضية الاستقبال: {{ doc.finishingreception }}،
-                        {% endif %}
-                        {% if doc.finishingentrance %}
-                        أرضية المدخل: {{ doc.finishingentrance }}،
-                        {% endif %}
-                        {% if doc.finishingrooms %}
-                        أرضية الغرف: {{ doc.finishingrooms }}،
-                        {% endif %}
-                        {% if doc.qualityofflooroutdoor %}
-                        نوعية أرضيات الساحات الخارجية: {{ doc.qualityofflooroutdoor }}.
-                        {% endif %}
-                        {% if doc.mjalsfloor %}
-                        أرضية المجالس: {{ doc.mjalsfloor }}،
-                        {% endif %}
-                        {% if doc.eatinghalls %}
-                        أرضية صالات الطعام: {{ doc.eatinghalls }}،
-                        {% endif %}
-                        {% if doc.finishinginternal %}
-                        الابواب الداخلية: {{ doc.finishinginternal }}،
-                        {% endif %}
-                        {% if doc.finishingexternal %}
-                        الابواب الخارجية: {{ doc.finishingexternal }}،
-                        {% endif %}
-                        {% if doc.externalwallcomponents %}
-                        مكونات الجدران الخارجية: {{ doc.externalwallcomponents }}،
-                        {% endif %}
-                        {% if doc.windowstype %}
-                        نوعية الشبابيك: {{ doc.windowstype }}،
-                        {% endif %}
-                        {% if doc.plammingtype %}
-                        نوعية التسليك والسباكة: {{ doc.plammingtype }}،
-                        {% endif %}
-                        {% if doc.innerpaint %}
-                        نوعية الدهان الداخلي: {{ doc.innerpaint }}،
-                        {% endif %}
-                        {% if doc.gypusmtype %}
-                        أعمال الجبس: {{ doc.gypusmtype }}،
-                        {% endif %}
-                        {% if doc.qualityofgypusmworker %}
-                        جودة عمال الجبس: {{ doc.qualityofgypusmworker }}
-                        {% endif %}
+
                     </td>
                 </tr>
 
@@ -1728,7 +1634,6 @@
                         {{ "{:,.2f}".format(doc.rent_total) }} ر.س
                     </td>
                 </tr>
-
                 <tr>
                     <td class="subtitle" colspan="4">نسبة الدخل للعقار</td>
                     <td class="bordertext" colspan="4">
